@@ -1,0 +1,22 @@
+@media screen and (min-width: 424px) {
+    .logo-image{
+        width: 90px;
+    }
+
+    .logo-image img{
+        width: 100%;
+    }
+
+    header{
+        height: 100px;
+    }
+
+    .lang-switch{
+        font-size: 20px;
+    }
+
+    .burger{
+        width: 40px;
+        height: 40px;
+    }
+}
