@@ -3,8 +3,9 @@
     --red: #E62428;
     --burgundy: #511717;
     --gray: #36413E;
+    --maroon: #2E0C0C;
     --white: #fff;
-    --ff-bandera: 'Bandera Pro', sans-serif;
+    --ff-bandera: 'Bandera Pro';
 }
 /* scrollbar */
 ::-webkit-scrollbar {
@@ -48,11 +49,18 @@
 
 /* для тайтлов */
 .title {
-    font-weight: 700;
+    font-weight: 900;
     font-family: var(--ff-bandera);
+    color: var(--maroon);
 }
 
 .subtitle {
     font-weight: 500;
-    font-family: var(--ff-bandera);
+    font-family: var(--ff-bandera), sans-serif;
+}
+
+/* контейнер */
+.container {
+    padding: 3%;
+    text-align: center;
 }
