@@ -49,7 +49,7 @@
 
 /* для тайтлов */
 .title {
-    font-weight: 900;
+    font-weight: bolder;
     font-family: var(--ff-bandera);
     color: var(--maroon);
 }
