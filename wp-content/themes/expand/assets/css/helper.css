@@ -1,0 +1,58 @@
+/* roots */
+:root {
+    --red: #E62428;
+    --burgundy: #511717;
+    --gray: #36413E;
+    --white: #fff;
+    --ff-bandera: 'Bandera Pro', sans-serif;
+}
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--red);
+    border-radius: 10px;
+}
+
+/* для кнопок */
+.red-button {
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--red);
+}
+
+/* базовый флекс */
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+/* для тайтлов */
+.title {
+    font-weight: 700;
+    font-family: var(--ff-bandera);
+}
+
+.subtitle {
+    font-weight: 500;
+    font-family: var(--ff-bandera);
+}
