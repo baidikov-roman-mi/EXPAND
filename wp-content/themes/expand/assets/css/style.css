@@ -1,7 +1,9 @@
 body{
     font-family: 'Inter', sans-serif;;
+    box-sizing: border-box;
 }
 
+/* хедер */
 header{
     height: 70px;
     border: 1px #000 solid;
@@ -18,4 +20,9 @@ header{
 .line{
     background-color: #000;
     height: 2px;
+}
+
+/* главная */
+.main-bg-image {
+    width: 100%;
 }
