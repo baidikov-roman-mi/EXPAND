@@ -1,9 +1,16 @@
 body{
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Inter';
+    font-weight: 300;
     box-sizing: border-box;
+    color: var(--gray);
 }
 
-/* хедер */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+/* header */
 header{
     height: 70px;
     border: 1px #000 solid;
@@ -22,7 +29,33 @@ header{
     height: 2px;
 }
 
-/* главная */
+/* main */
 .main-bg-image {
     width: 100%;
+}
+
+main .title {
+    font-size: 27px;
+}
+
+main .title, main h2 {
+    text-align: center;
+}
+
+main .descr {
+    color: var(--gray);
+}
+
+main article {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.main-article-icons img {
+    min-width: 20px;
+}
+
+.main-article-icons {
+    margin-right: 10px;
 }
