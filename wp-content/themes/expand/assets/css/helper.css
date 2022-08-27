@@ -32,6 +32,10 @@
     display: flex;
 }
 
+.none{
+    display: none;
+}
+
 .flex-center {
     display: flex;
     justify-content: center;

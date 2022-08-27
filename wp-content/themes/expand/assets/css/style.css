@@ -23,7 +23,7 @@ header{
 }
 
 .burger-menu{
-    display: none;
+    z-index: 1;
 }
 
 /* главная */

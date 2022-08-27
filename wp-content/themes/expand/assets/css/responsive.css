@@ -10,7 +10,6 @@
     }
 
     .burger-menu{
-        display: none;
         align-items: center;
         gap: 20px;
     }
@@ -69,6 +68,7 @@
         flex-direction: row;
         position: static;
         width: auto;
+        height: auto;
     }
 
     .logo-image{
