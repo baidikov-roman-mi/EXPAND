@@ -1,12 +1,11 @@
 body{
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Inter', sans-serif;
     box-sizing: border-box;
 }
 
 /* хедер */
 header{
     height: 70px;
-    border: 1px #000 solid;
     align-items: center;
     justify-content: space-around;
 }
@@ -15,11 +14,16 @@ header{
     height: 30px;
     width: 30px;
     justify-content: space-around;
+    cursor: pointer;
 }
 
 .line{
     background-color: #000;
     height: 2px;
+}
+
+.burger-menu{
+    display: none;
 }
 
 /* главная */
