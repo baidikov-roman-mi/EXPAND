@@ -1,6 +1,5 @@
 body{
-    font-family: 'Inter';
-    font-weight: 300;
+    font-family: 'Inter', sans-serif;;
     box-sizing: border-box;
     color: var(--gray);
 }
@@ -13,7 +12,6 @@ h1, h2, h3, h4, h5, h6 {
 /* header */
 header{
     height: 70px;
-    border: 1px #000 solid;
     align-items: center;
     justify-content: space-around;
 }
@@ -22,6 +20,7 @@ header{
     height: 30px;
     width: 30px;
     justify-content: space-around;
+    cursor: pointer;
 }
 
 .line{
@@ -29,7 +28,34 @@ header{
     height: 2px;
 }
 
-/* main */
+.burger-menu{
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    top: 65px;
+    height: 190px;
+    align-items: center;
+    gap: 20px;
+}
+
+.navigations, .header-btn{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navigations{
+    color: var(--burgundy);
+}
+
+.header-btn{
+    height: 40px;
+    width: 130px;
+    color: #fff;
+}
+
+/* главная */
 .main-bg-image {
     width: 100%;
 }
