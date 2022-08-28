@@ -26,6 +26,10 @@ header{
     z-index: 1;
 }
 
+.lang-switch{
+    cursor: pointer;
+}
+
 /* главная */
 .main-bg-image {
     width: 100%;
