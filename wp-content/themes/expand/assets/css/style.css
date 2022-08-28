@@ -55,6 +55,10 @@ header{
     color: #fff;
 }
 
+.lang-switch{
+    cursor: pointer;
+}
+
 /* главная */
 .main-bg-image {
     width: 100%;

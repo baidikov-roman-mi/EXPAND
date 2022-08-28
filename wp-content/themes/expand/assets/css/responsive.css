@@ -111,3 +111,34 @@
         order: -1;
     }
 }
+
+@media screen and (min-width: 1023px){
+    .burger-menu{
+        position: relative;
+        top: 0;
+        left: 8%;
+    }
+
+    .navigations, .header-btn {
+        font-size: 22px;
+    }
+
+    .logo-image{
+        width: 120px;
+    }
+
+    header{
+        height: 120px;
+    }
+
+    .header-btn{
+        height: 50px;
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 1439px){
+    .burger-menu{
+        left: 14%;
+    }
+}
