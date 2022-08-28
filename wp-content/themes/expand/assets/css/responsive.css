@@ -1,36 +1,4 @@
-@media screen and (min-width: 319px){
-    .burger-menu{
-        flex-direction: column;
-        justify-content: space-around;
-        position: absolute;
-        background-color: #fff;
-        width: 100%;
-        top: 65px;
-        height: 190px;
-    }
-
-    .burger-menu{
-        align-items: center;
-        gap: 20px;
-    }
-    
-    .navigations, .header-btn{
-        text-decoration: none;
-        font-size: 18px;
-    }
-    
-    .navigations{
-        color: var(--burgundy);
-    }
-    
-    .header-btn{
-        height: 40px;
-        width: 130px;
-        color: #fff;
-    }
-}
-
-@media screen and (min-width: 424px) {
+@media screen and (min-width: 425px) {
     .logo-image{
         width: 90px;
     }
@@ -58,7 +26,7 @@
     }
 }
 
-@media screen and (min-width: 767px){
+@media screen and (min-width: 768px){
     .burger{
         display: none;
     }
@@ -76,7 +44,7 @@
     }
 }
 
-@media screen and (min-width: 1023px){
+@media screen and (min-width: 1024px){
     .burger-menu{
         position: relative;
         top: 0;
@@ -101,7 +69,7 @@
     }
 }
 
-@media screen and (min-width: 1439px){
+@media screen and (min-width: 1440px){
     .burger-menu{
         left: 14%;
     }

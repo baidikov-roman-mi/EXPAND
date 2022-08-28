@@ -30,6 +30,36 @@ header{
     cursor: pointer;
 }
 
+.burger-menu{
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    top: 65px;
+    height: 190px;
+}
+
+.burger-menu{
+    align-items: center;
+    gap: 20px;
+}
+
+.navigations, .header-btn{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navigations{
+    color: var(--burgundy);
+}
+
+.header-btn{
+    height: 40px;
+    width: 130px;
+    color: #fff;
+}
+
 /* главная */
 .main-bg-image {
     width: 100%;
