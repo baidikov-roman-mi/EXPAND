@@ -1,22 +1,23 @@
 @media screen and (min-width: 425px) {
+
     /* header */
-    .logo-image{
+    .logo-image {
         width: 90px;
     }
 
-    .logo-image img{
+    .logo-image img {
         width: 100%;
     }
 
-    header{
+    header {
         height: 100px;
     }
 
-    .lang-switch{
+    .lang-switch {
         font-size: 20px;
     }
 
-    .burger{
+    .burger {
         width: 40px;
         height: 40px;
     }
@@ -25,12 +26,13 @@
 /* tablet */
 
 @media screen and (min-width: 768px) {
+
     /* header */
-    .burger{
+    .burger {
         display: none;
     }
 
-    .burger-menu{
+    .burger-menu {
         display: flex;
         flex-direction: row;
         position: static;
@@ -38,7 +40,7 @@
         height: auto;
     }
 
-    .logo-image{
+    .logo-image {
         order: -1;
     }
 
@@ -47,16 +49,21 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
-        align-items: end;
+        align-items: flex-end;
     }
 
-    main .title, main h2 {
+    main .title {
+        font-size: 35px;
+    }
+
+    main .title,
+    main h2 {
         text-align: left;
     }
 
     .main-bg-container {
         padding: 5%;
-        width: 45%;
+        width: 35%;
     }
 
     main .container {
@@ -65,55 +72,42 @@
 }
 
 
-
-/* Знаю, сам говорил стараться без этого обходиться, но тут не получилось */
-@media screen and (min-width: 950px) {
-    
-    /* main */
-    main .title {
-        font-size: 40px;
-    } 
-
-    main .container {
-        width: auto;
-    }
-
-    .main-bg-container {
-        width: 50%;
-    }
-}
-
-
 /* desktop */
 
 @media screen and (min-width: 1024px) {
+
     /* header */
-    .burger-menu{
+    .burger-menu {
         position: relative;
         top: 0;
         left: 8%;
     }
 
-    .navigations, .header-btn {
+    .navigations,
+    .header-btn {
         font-size: 22px;
     }
 
-    .logo-image{
+    .logo-image {
         width: 120px;
     }
 
-    header{
+    header {
         height: 120px;
     }
 
-    .header-btn{
+    .header-btn {
         height: 50px;
         width: 150px;
     }
 
     /* main */
+    main {
+        align-items: flex-start;
+    }
+
     main .title {
-        font-size: 52px;
+        font-size: 45px;
     }
 
     main h2 {
@@ -123,18 +117,18 @@
 
 /* large-desktop */
 @media screen and (min-width: 1440px) {
+
     /* header */
-    .burger-menu{
+    .burger-menu {
         left: 14%;
     }
 
     /* main */
-    .main-bg-container {
-        width: 30%;
+    main .title {
+        font-size: 52px;
     }
 
-    .burger-menu{
-        top: 95px;
-        height: 220px;
+    .main-bg-container {
+        width: 30%;
     }
 }
