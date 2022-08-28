@@ -1,4 +1,5 @@
 @media screen and (min-width: 425px) {
+    /* header */
     .logo-image{
         width: 90px;
     }
@@ -24,7 +25,23 @@
 /* tablet */
 
 @media screen and (min-width: 768px) {
-    
+    /* header */
+    .burger{
+        display: none;
+    }
+
+    .burger-menu{
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        height: auto;
+    }
+
+    .logo-image{
+        order: -1;
+    }
+
     /* main */
     main {
         display: flex;
@@ -56,7 +73,7 @@
     main .title {
         font-size: 40px;
     } 
-    
+
     main .container {
         width: auto;
     }
@@ -70,49 +87,7 @@
 /* desktop */
 
 @media screen and (min-width: 1024px) {
-    
-    /* main */
-    main .title {
-        font-size: 52px;
-    }
-
-    main h2 {
-        font-size: 30px;
-    }
-}
-
-/* large-desktop */
-@media screen and (min-width: 1440px) {
-    /* main */
-    .main-bg-container {
-        width: 30%;
-    }
-
-    .burger-menu{
-        top: 95px;
-        height: 220px;
-    }
-}
-
-@media screen and (min-width: 767px){
-    .burger{
-        display: none;
-    }
-
-    .burger-menu{
-        display: flex;
-        flex-direction: row;
-        position: static;
-        width: auto;
-        height: auto;
-    }
-
-    .logo-image{
-        order: -1;
-    }
-}
-
-@media screen and (min-width: 1023px){
+    /* header */
     .burger-menu{
         position: relative;
         top: 0;
@@ -135,10 +110,31 @@
         height: 50px;
         width: 150px;
     }
+
+    /* main */
+    main .title {
+        font-size: 52px;
+    }
+
+    main h2 {
+        font-size: 30px;
+    }
 }
 
-@media screen and (min-width: 1439px){
+/* large-desktop */
+@media screen and (min-width: 1440px) {
+    /* header */
     .burger-menu{
         left: 14%;
+    }
+
+    /* main */
+    .main-bg-container {
+        width: 30%;
+    }
+
+    .burger-menu{
+        top: 95px;
+        height: 220px;
     }
 }
