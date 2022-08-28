@@ -50,16 +50,28 @@
     flex-direction: row;
 }
 
+/* для текста */
+.text-center {
+    text-align: center;
+}
+
 /* для тайтлов */
 .title {
-    font-weight: bolder;
+    font-weight: 700;
     font-family: var(--ff-bandera);
     color: var(--maroon);
+    font-size: 20px;
+    letter-spacing: 0.05em;
 }
 
 .subtitle {
     font-weight: 500;
-    font-family: var(--ff-bandera) sans-serif;
+    font-family: var(--ff-bandera);
+}
+
+.descr {
+    font-weight: 400;
+    color: var(--maroon);
 }
 
 /* убираем маргины и падинги */
@@ -75,6 +87,5 @@ img{
 
 /* контейнер */
 .container {
-    padding: 3%;
-    text-align: center;
+    padding: 5%;
 }

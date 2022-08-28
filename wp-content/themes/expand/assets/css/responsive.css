@@ -1,4 +1,5 @@
 @media screen and (min-width: 425px) {
+    /* header */
     .logo-image{
         width: 90px;
     }
@@ -19,14 +20,12 @@
         width: 40px;
         height: 40px;
     }
-
-    .burger-menu{
-        top: 95px;
-        height: 220px;
-    }
 }
 
-@media screen and (min-width: 768px){
+/* tablet */
+
+@media screen and (min-width: 768px) {
+    /* header */
     .burger{
         display: none;
     }
@@ -42,9 +41,53 @@
     .logo-image{
         order: -1;
     }
+
+    /* main */
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: end;
+    }
+
+    main .title, main h2 {
+        text-align: left;
+    }
+
+    .main-bg-container {
+        padding: 5%;
+        width: 45%;
+    }
+
+    main .container {
+        width: 40%;
+    }
 }
 
-@media screen and (min-width: 1024px){
+
+
+/* Знаю, сам говорил стараться без этого обходиться, но тут не получилось */
+@media screen and (min-width: 950px) {
+    
+    /* main */
+    main .title {
+        font-size: 40px;
+    } 
+
+    main .container {
+        width: auto;
+    }
+
+    .main-bg-container {
+        width: 50%;
+    }
+}
+
+
+/* desktop */
+
+@media screen and (min-width: 1024px) {
+    /* header */
     .burger-menu{
         position: relative;
         top: 0;
@@ -67,10 +110,31 @@
         height: 50px;
         width: 150px;
     }
+
+    /* main */
+    main .title {
+        font-size: 52px;
+    }
+
+    main h2 {
+        font-size: 30px;
+    }
 }
 
-@media screen and (min-width: 1440px){
+/* large-desktop */
+@media screen and (min-width: 1440px) {
+    /* header */
     .burger-menu{
         left: 14%;
+    }
+
+    /* main */
+    .main-bg-container {
+        width: 30%;
+    }
+
+    .burger-menu{
+        top: 95px;
+        height: 220px;
     }
 }

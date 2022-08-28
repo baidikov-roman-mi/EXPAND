@@ -1,9 +1,15 @@
 body{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;;
     box-sizing: border-box;
+    color: var(--gray);
 }
 
-/* хедер */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+/* header */
 header{
     height: 70px;
     align-items: center;
@@ -23,7 +29,30 @@ header{
 }
 
 .burger-menu{
-    z-index: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    top: 65px;
+    height: 190px;
+    align-items: center;
+    gap: 20px;
+}
+
+.navigations, .header-btn{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navigations{
+    color: var(--burgundy);
+}
+
+.header-btn{
+    height: 40px;
+    width: 130px;
+    color: #fff;
 }
 
 .lang-switch{
@@ -63,4 +92,30 @@ header{
 /* главная */
 .main-bg-image {
     width: 100%;
+}
+
+main .title {
+    font-size: 27px;
+}
+
+main .title, main h2 {
+    text-align: center;
+}
+
+main .descr {
+    color: var(--gray);
+}
+
+main article {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.main-article-icons img {
+    min-width: 20px;
+}
+
+.main-article-icons {
+    margin-right: 10px;
 }
