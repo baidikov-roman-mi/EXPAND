@@ -42,6 +42,11 @@
     align-items: center;
 }
 
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
 .column {
     flex-direction: column;
 }
@@ -101,8 +106,12 @@ p {
     font-size: 1rem;
 }
 
-h1, h2 {
+h2 {
     font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
 }
 
 h4 {

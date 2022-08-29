@@ -1,31 +1,35 @@
-body{
-    font-family: 'Inter', sans-serif;;
+body {
+    font-family: 'Inter', sans-serif;
+    ;
     font-weight: 300;
     box-sizing: border-box;
     color: var(--gray);
 }
 
+li {
+    margin-left: 1em;
+}
 
 /* header */
-header{
+header {
     height: 70px;
     align-items: center;
     justify-content: space-around;
 }
 
-.burger{
+.burger {
     height: 30px;
     width: 30px;
     justify-content: space-around;
     cursor: pointer;
 }
 
-.line{
+.line {
     background-color: #000;
     height: 2px;
 }
 
-.burger-menu{
+.burger-menu {
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
@@ -37,22 +41,23 @@ header{
     gap: 20px;
 }
 
-.navigations, .header-btn{
+.navigations,
+.header-btn {
     text-decoration: none;
     font-size: 18px;
 }
 
-.navigations{
+.navigations {
     color: var(--burgundy);
 }
 
-.header-btn{
+.header-btn {
     height: 40px;
     width: 130px;
     color: #fff;
 }
 
-.lang-switch{
+.lang-switch {
     cursor: pointer;
 }
 
@@ -66,7 +71,8 @@ main .title {
     font-size: 2.25rem;
 }
 
-main .title, main h2 {
+main .title,
+main h2 {
     text-align: center;
 }
 
@@ -93,16 +99,57 @@ main article {
 
 
 /* copany-work */
-.company-article-icons {
+.benefits-article-icons {
     min-width: 50px;
     max-width: 50px;
     margin: 10px 10px 10px 0;
 }
 
-.company-article-icons img {
+.benefits-article-icons img {
     width: 100%;
 }
 
-.company-work figure {
+.benefits figure {
     margin: 10px 10px 10px 0;
+}
+
+
+/* lessons-types */
+
+.lessons-types figure {
+    margin: 20px 0;
+}
+
+.lesson-card {
+    position: relative;
+}
+
+.circle-icon {
+    width: 15%;
+    position: absolute;
+    top: -1em;
+    left: -1em;
+}
+
+.price {
+    margin-top: 15px;
+}
+
+.total-cost {
+    margin-right: 20px;
+}
+
+.total-cost p {
+    margin: 5px 0;
+}
+
+.discount {
+    width: 150px;
+    position: relative;
+}
+
+.discount .descr {
+    position: absolute;
+    top: 10px;
+    left: 9px;
 }

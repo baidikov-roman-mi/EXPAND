@@ -23,7 +23,27 @@
     .burger {
         width: 40px;
         height: 40px;
-    }   
+    }
+
+
+    /* lessons-type */
+    .lessons-types figure {
+        margin-top: 40px;
+    }
+
+    .discount {
+        width: 180px;
+    }
+
+    .discount .descr {
+        top: 12px;
+        left: 13px;
+    }
+
+    .circle-icon {
+        top: -1.5em;
+        left: -1.5em;
+    }
 }
 
 /* tablet */
@@ -82,15 +102,50 @@
     }
 
 
-    /* company-work */
-    .company-work article {
+    /* benefits */
+    .benefits article {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .company-work figure {
+    .benefits figure {
         width: 48%;
+    }
+
+
+    /* lessons-types */
+    .card-horizontal {
+        display: flex;
+        justify-content: center;
+    }
+
+    .lessons-types figure {
+        width: 50%;
+        margin: 20px 20px 20px 0;
+    }
+
+    .price {
+        flex-wrap: wrap;
+    }
+    
+    .discount {
+        width: 200px;
+    }
+
+    .total-cost {
+        margin-bottom: 10px;
+
+    }
+
+    .discount .descr {
+        top: 13px;
+        left: 12px;
+    }
+
+    .circle-icon {
+        top: -1em;
+        left: -1em;
     }
 }
 
@@ -138,18 +193,38 @@
     }
 
 
-    /* company-work */
-    .company-work h4 {
+    /* benefits */
+    .benefits h4 {
         font-size: 22px;
     }
 
-    .company-work p {
+    .benefits p {
         font-size: 1.1rem;
     }
 
-    .company-article-icons {
+    .benefits-article-icons {
         min-width: 75px;
         max-width: 75px;
+    }
+
+
+    /* lessons-type */
+    .discount {
+        width: 225px;
+    }
+
+    .discount .descr {
+        top: 16px;
+        left: 13px;
+    }
+
+    .total-cost {
+        margin-right: 30px;
+    }
+
+    .lessons-types figure {
+        width: 550px;
+        margin: 20px 40px 20px 0;
     }
 }
 
@@ -185,5 +260,16 @@
     .main-article-icons {
         min-width: 25px;
         max-width: 25px;
+    }
+
+
+    /* lessons-type */
+    .discount {
+        width: 250px;
+    }
+
+    .discount .descr {
+        top: 18px;
+        left: 15px;
     }
 }
