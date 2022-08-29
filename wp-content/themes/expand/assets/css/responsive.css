@@ -1,4 +1,7 @@
 @media screen and (min-width: 425px) {
+    html {
+        font-size: 14px;
+    }
 
     /* header */
     .logo-image {
@@ -20,12 +23,24 @@
     .burger {
         width: 40px;
         height: 40px;
-    }
+    }   
 }
 
 /* tablet */
 
 @media screen and (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    main .title {
+        font-size: 2.2rem;
+    }
+
 
     /* header */
     .burger {
@@ -52,10 +67,6 @@
         align-items: flex-end;
     }
 
-    main .title {
-        font-size: 35px;
-    }
-
     main .title,
     main h2 {
         text-align: left;
@@ -69,12 +80,28 @@
     main .container {
         width: 40%;
     }
+
+
+    /* company-work */
+    .company-work article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .company-work figure {
+        width: 48%;
+    }
 }
 
 
 /* desktop */
 
 @media screen and (min-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
+
 
     /* header */
     .burger-menu {
@@ -106,17 +133,39 @@
         align-items: flex-start;
     }
 
-    main .title {
-        font-size: 45px;
+    .main-article-text p {
+        font-size: 20px;
     }
 
-    main h2 {
-        font-size: 30px;
+
+    /* company-work */
+    .company-work h4 {
+        font-size: 22px;
+    }
+
+    .company-work p {
+        font-size: 1.1rem;
+    }
+
+    .company-article-icons {
+        min-width: 75px;
+        max-width: 75px;
     }
 }
 
 /* large-desktop */
 @media screen and (min-width: 1440px) {
+    html {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 2.6rem;
+    }
+
+    main .title {
+        font-size: 2.6rem;
+    }
 
     /* header */
     .burger-menu {
@@ -124,11 +173,17 @@
     }
 
     /* main */
-    main .title {
-        font-size: 52px;
-    }
 
     .main-bg-container {
         width: 30%;
+    }
+
+    .main-article-text p {
+        font-size: 1.2rem;
+    }
+
+    .main-article-icons {
+        min-width: 25px;
+        max-width: 25px;
     }
 }

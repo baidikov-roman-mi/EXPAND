@@ -1,13 +1,10 @@
 body{
     font-family: 'Inter', sans-serif;;
+    font-weight: 300;
     box-sizing: border-box;
     color: var(--gray);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-    margin: 20px 0;
-}
 
 /* header */
 header{
@@ -59,35 +56,6 @@ header{
     cursor: pointer;
 }
 
-.burger-menu{
-    flex-direction: column;
-    justify-content: space-around;
-    position: absolute;
-    background-color: #fff;
-    width: 100%;
-    top: 65px;
-    height: 190px;
-}
-
-.burger-menu{
-    align-items: center;
-    gap: 20px;
-}
-
-.navigations, .header-btn{
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.navigations{
-    color: var(--burgundy);
-}
-
-.header-btn{
-    height: 40px;
-    width: 130px;
-    color: #fff;
-}
 
 /* главная */
 .main-bg-image {
@@ -95,7 +63,7 @@ header{
 }
 
 main .title {
-    font-size: 27px;
+    font-size: 2.25rem;
 }
 
 main .title, main h2 {
@@ -112,10 +80,29 @@ main article {
     margin: 10px 0;
 }
 
-.main-article-icons img {
-    min-width: 20px;
-}
-
 .main-article-icons {
     margin-right: 10px;
+    min-width: 20px;
+    max-width: 20px;
+    /* Спорная шняга */
+}
+
+.main-article-icons img {
+    width: 100%;
+}
+
+
+/* copany-work */
+.company-article-icons {
+    min-width: 50px;
+    max-width: 50px;
+    margin: 10px 10px 10px 0;
+}
+
+.company-article-icons img {
+    width: 100%;
+}
+
+.company-work figure {
+    margin: 10px 10px 10px 0;
 }

@@ -60,13 +60,13 @@
     font-weight: 700;
     font-family: var(--ff-bandera);
     color: var(--maroon);
-    font-size: 20px;
     letter-spacing: 0.05em;
 }
 
 .subtitle {
     font-weight: 500;
     font-family: var(--ff-bandera);
+    color: var(--burgundy);
 }
 
 .descr {
@@ -88,4 +88,33 @@ img{
 /* контейнер */
 .container {
     padding: 5%;
+}
+
+
+/* текст */
+
+html {
+    font-size: 12px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h1, h2 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h1, h2 {
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+h3, h4, h5, h6 {
+    font-weight: 300;
+    margin: 5px 0;
 }
