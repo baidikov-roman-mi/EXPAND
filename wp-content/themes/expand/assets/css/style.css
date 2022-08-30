@@ -98,13 +98,7 @@ main article {
 }
 
 
-/* copany-work */
-.benefits-article-icons {
-    min-width: 50px;
-    max-width: 50px;
-    margin: 10px 10px 10px 0;
-}
-
+/* benefits */
 .benefits-article-icons img {
     width: 100%;
 }
@@ -113,6 +107,84 @@ main article {
     margin: 10px 10px 10px 0;
 }
 
+/* flip-cards */
+.rotate-cards {
+    margin: 10px 10px 10px 0;
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.video-rotate {
+    transform: rotateY(180deg);
+}
+
+.benefits-article-icons, .video-rotate {
+    min-width: 50px;
+    max-width: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+/* подёргивающаяся иконка */
+@keyframes twitch {
+    0% {
+        transform: translateY(0);
+    }
+
+    5% {
+        transform: translateY(-5px);
+    }
+
+    17% {
+        transform: translateY(0);
+    }
+
+    32% {
+        transform: translateX(0);
+    }
+
+    34% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    67% {
+        transform: translateY(0);
+    }
+
+    70% {
+        transform: translateY(-5px);
+    }
+
+    84% {
+        transform: translateY(0);
+    }
+
+    88% {
+        transform: translateX(0);
+    }
+
+    90% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.twitch-animation {
+    animation: twitch 2s infinite;
+}
 
 /* lessons-types */
 

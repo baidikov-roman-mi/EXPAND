@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EXPAND - школа программирования</title>
 
+    <!-- фонт осом -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="fonts/bandera.css">
     <link rel="stylesheet" href="css/helper.css">
@@ -19,6 +26,7 @@
     <!-- фавикон -->
     <link rel="icon" href="img/logo.png">
 </head>
+
 <body>
     <!-- header -->
     <header class="flex">
@@ -76,11 +84,11 @@
                 </div>
             </article>
             <article>
-                <div class="main-article-icons"> 
+                <div class="main-article-icons">
                     <img src="img/main/family.png" alt="">
                 </div>
                 <div class="main-article-text">
-                    
+
                     <p><span class="descr">Не просто курс -</span> одна семья</p>
                 </div>
             </article>
@@ -93,8 +101,13 @@
         <h1 class="title">Прямо как реальная работа в компании</h1>
         <article>
             <figure class="flex">
-                <div class="benefits-article-icons">
-                    <img src="img/benefits/les-ico.png" alt="">
+                <div id="twitch-card" class="rotate-cards twitch-animation">
+                    <div class="benefits-article-icons">
+                        <img src="img/benefits/les-ico.png" alt="">
+                    </div>
+                    <div class="video-rotate">
+                        <img src="img/benefits/play1-ico.png" alt="">
+                    </div>
                 </div>
                 <div>
                     <h4 class="subtitle">Новые уроки каждую неделю</h4>
@@ -102,8 +115,13 @@
                 </div>
             </figure>
             <figure class="flex">
-                <div class="benefits-article-icons">
-                    <img src="img/benefits/rot-ico.png" alt="">
+                <div class="rotate-cards">
+                    <div class="benefits-article-icons">
+                        <img src="img/benefits/rot-ico.png" alt="">
+                    </div>
+                    <div class="video-rotate">
+                        <img src="img/benefits/play1-ico.png" alt="">
+                    </div>
                 </div>
                 <div>
                     <h4 class="subtitle">Ротации</h4>
@@ -111,8 +129,13 @@
                 </div>
             </figure>
             <figure class="flex">
-                <div class="benefits-article-icons">
-                    <img src="img/benefits/pro-ico.png" alt="">
+                <div class="rotate-cards">
+                    <div class="benefits-article-icons">
+                        <img src="img/benefits/pro-ico.png" alt="">
+                    </div>
+                    <div class="video-rotate">
+                        <img src="img/benefits/play1-ico.png" alt="">
+                    </div>
                 </div>
                 <div>
                     <h4 class="subtitle">Реальные проекты</h4>
@@ -120,8 +143,13 @@
                 </div>
             </figure>
             <figure class="flex">
-                <div class="benefits-article-icons">
-                    <img src="img/benefits/aut-ico.png" alt="">
+                <div class="rotate-cards">
+                    <div class="benefits-article-icons">
+                        <img src="img/benefits/aut-ico.png" alt="">
+                    </div>
+                    <div class="video-rotate">
+                        <img src="img/benefits/play1-ico.png" alt="">
+                    </div>
                 </div>
                 <div>
                     <h4 class="subtitle">Стань автором уроков / учителем</h4>
@@ -148,10 +176,18 @@
                 <article>
                     <h3 class="subtitle">Работа в команде</h3>
                     <ol>
-                        <li><p>В группе <span class="descr">3-6 студентов</span></p></li>
-                        <li><p>Время урока - <span class="descr">1.5 часа</span></p></li>
-                        <li><p><span class="descr">Авторские </span>методички и задания</p></li>
-                        <li><p>Быллы, рейтинг и <span class="descr">скидки за достижения</span></p></li>
+                        <li>
+                            <p>В группе <span class="descr">3-6 студентов</span></p>
+                        </li>
+                        <li>
+                            <p>Время урока - <span class="descr">1.5 часа</span></p>
+                        </li>
+                        <li>
+                            <p><span class="descr">Авторские </span>методички и задания</p>
+                        </li>
+                        <li>
+                            <p>Быллы, рейтинг и <span class="descr">скидки за достижения</span></p>
+                        </li>
                     </ol>
                     <div class="price align-center">
                         <div class="total-cost">
@@ -177,10 +213,18 @@
                 <article>
                     <h3 class="subtitle">Прокачка навыков с ментором</h3>
                     <ol>
-                        <li><p>Урок <span class="descr">1-на-1</span></p></li>
-                        <li><p><span class="descr">60-90 минут </span>практики</p></li>
-                        <li><p>Подготовка к переходу в <span class="descr">сильную группу</span></p></li>
-                        <li><p>Делаем твои <span class="descr">проекты вместе</span></p></li>
+                        <li>
+                            <p>Урок <span class="descr">1-на-1</span></p>
+                        </li>
+                        <li>
+                            <p><span class="descr">60-90 минут </span>практики</p>
+                        </li>
+                        <li>
+                            <p>Подготовка к переходу в <span class="descr">сильную группу</span></p>
+                        </li>
+                        <li>
+                            <p>Делаем твои <span class="descr">проекты вместе</span></p>
+                        </li>
                     </ol>
                     <div class="price">
                         <div class="total-cost">
@@ -195,7 +239,7 @@
 
 
     <script src="js/burger.js"></script>
-    <!-- фонт осом -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/cardFlipTwitch.js"></script>
 </body>
+
 </html>

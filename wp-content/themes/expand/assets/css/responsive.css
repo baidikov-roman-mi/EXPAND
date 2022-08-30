@@ -202,7 +202,11 @@
         font-size: 1.1rem;
     }
 
-    .benefits-article-icons {
+    .rotate-cards {
+        height: 75px;
+    }
+
+    .benefits-article-icons, .video-rotate, .rotate-cards {
         min-width: 75px;
         max-width: 75px;
     }
@@ -247,6 +251,7 @@
         left: 14%;
     }
 
+    
     /* main */
 
     .main-bg-container {
