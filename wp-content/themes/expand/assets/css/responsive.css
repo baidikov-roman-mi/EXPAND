@@ -147,6 +147,12 @@
         top: -1em;
         left: -1em;
     }
+
+    
+    /* services */
+    .card-column {
+        margin-right: 20px;
+    }
 }
 
 
@@ -206,7 +212,7 @@
         height: 75px;
     }
 
-    .benefits-article-icons, .video-rotate, .rotate-cards {
+    .card-icon, .rotate-cards {
         min-width: 75px;
         max-width: 75px;
     }

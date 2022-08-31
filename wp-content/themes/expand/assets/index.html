@@ -18,6 +18,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
+    <!-- owlcarousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+
     <link rel="stylesheet" href="fonts/bandera.css">
     <link rel="stylesheet" href="css/helper.css">
     <link rel="stylesheet" href="css/style.css">
@@ -102,10 +106,10 @@
         <article>
             <figure class="flex">
                 <div id="twitch-card" class="rotate-cards twitch-animation">
-                    <div class="benefits-article-icons">
+                    <div class="benefits-article-icons card-icon">
                         <img src="img/benefits/les-ico.png" alt="">
                     </div>
-                    <div class="video-rotate">
+                    <div class="video-rotate card-icon">
                         <img src="img/benefits/play1-ico.png" alt="">
                     </div>
                 </div>
@@ -116,10 +120,10 @@
             </figure>
             <figure class="flex">
                 <div class="rotate-cards">
-                    <div class="benefits-article-icons">
+                    <div class="benefits-article-icons card-icon">
                         <img src="img/benefits/rot-ico.png" alt="">
                     </div>
-                    <div class="video-rotate">
+                    <div class="video-rotate card-icon">
                         <img src="img/benefits/play1-ico.png" alt="">
                     </div>
                 </div>
@@ -130,10 +134,10 @@
             </figure>
             <figure class="flex">
                 <div class="rotate-cards">
-                    <div class="benefits-article-icons">
+                    <div class="benefits-article-icons card-icon">
                         <img src="img/benefits/pro-ico.png" alt="">
                     </div>
-                    <div class="video-rotate">
+                    <div class="video-rotate card-icon">
                         <img src="img/benefits/play1-ico.png" alt="">
                     </div>
                 </div>
@@ -144,10 +148,10 @@
             </figure>
             <figure class="flex">
                 <div class="rotate-cards">
-                    <div class="benefits-article-icons">
+                    <div class="benefits-article-icons card-icon">
                         <img src="img/benefits/aut-ico.png" alt="">
                     </div>
-                    <div class="video-rotate">
+                    <div class="video-rotate card-icon">
                         <img src="img/benefits/play1-ico.png" alt="">
                     </div>
                 </div>
@@ -238,6 +242,96 @@
     </section>
 
 
+    <!-- services -->
+    <section class="services">
+        <div class="container">
+            <h1 class="title">С нуля до тимлида</h1>
+            <div id="services-carousel" class="owl-carousel">
+                <div class="card-horizontal">
+                    <div class="card-column">
+                        <figure class="flex">
+                            <div class="card-icon">
+                                <img src="img/services/html-ico.png" alt="">
+                            </div>
+                            <article>
+                                <h4 class="subtitle">1. Вёрстка сайтов HTML/CSS/JS</h4>
+                                <p>Сначала мы научимся делать отдельные <span class="descr">“запчасти” сайтов </span></p>
+                            </article>
+                        </figure>
+                        <figure class="flex">
+                            <div class="card-icon">
+                                <img src="img/services/js-co.png" alt="">
+                            </div>
+                            <article>
+                                <h4 class="subtitle">2. Чистый JavaScript</h4>
+                                <p>После мы будем покорять <span class="descr">самый популярный язык в мире — JavaScript</span></p>
+                            </article>
+                        </figure>
+                    </div>
+                    <div class="card-column">
+                        <figure class="flex">
+                            <div class="card-icon">
+                                <img src="img/services/frl-ico.png" alt="">
+                            </div>
+                            <article>
+                                <h4 class="subtitle">3. Фриланс и работа в команде</h4>
+                                <p>Мы будем работать в команде с и <span class="descr">заработаем тебе первые деньги</span><p>
+                            </article>
+                        </figure>
+                        <figure class="flex">
+                            <div class="card-icon">
+                                <img src="img/services/nod-ico.png" alt="">
+                            </div>
+                            <article>
+                                <h4 class="subtitle">4. Node.js</h4>
+                                <p>До этого мы учили <span class="descr">фронтэнд</span> Теперь мы выйдем на новый уровень - <span class="descr">бэкенд</span><p>
+                            </article>
+                        </figure>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    <div class="card-column">
+                        <figure class="flex">
+                            <div class="card-icon">
+                                <img src="img/services/react.png" alt="">
+                            </div>
+                            <article>
+                                <h4 class="subtitle">React.js</h4>
+                                <p>ПРасскажите, что отличает ваши услуги от услуг в других компаниях</p>
+                            </article>
+                        </figure>
+                        <figure class="flex">
+                            <div class="card-icon">
+                                <img src="img/services/vue-ico.png" alt="">
+                            </div>
+                            <article>
+                                <h4 class="subtitle">Vue.js</h4>
+                                <p>Расскажите, что отличает ваши услуги от услуг в других компаниях<p>
+                            </article>
+                        </figure>
+                    </div>  
+                    <div class="card-column">
+                        <figure class="flex">
+                            <div class="card-icon">
+                                <img src="img/services/management-ico.png" alt="">
+                            </div>
+                            <article>
+                                <h4 class="subtitle">Менеджмент</h4>
+                                <p>Расскажите, что отличает вас  от других компаний. Управление IT командами<p>
+                            </article>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- owlcarousel -->
+    <script src="owlcarousel/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.js"></script>
+
+    <script src="js/slider.js"></script>
     <script src="js/burger.js"></script>
     <script src="js/cardFlipTwitch.js"></script>
 </body>

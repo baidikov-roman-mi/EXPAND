@@ -103,7 +103,7 @@ main article {
     width: 100%;
 }
 
-.benefits figure {
+.benefits figure, .services figure {
     margin: 10px 10px 10px 0;
 }
 
@@ -122,13 +122,16 @@ main article {
 }
 
 .benefits-article-icons, .video-rotate {
-    min-width: 50px;
-    max-width: 50px;
     position: absolute;
     top: 0;
     left: 0;
     backface-visibility: hidden;
     transition: 1s;
+}
+
+.card-icon {
+    min-width: 50px;
+    max-width: 50px;
 }
 
 /* подёргивающаяся иконка */
@@ -224,4 +227,77 @@ main article {
     position: absolute;
     top: 10px;
     left: 9px;
+}
+
+
+/* services */
+#services-carousel {
+    display: block;
+    /* width: 500px; */
+}
+
+.services .card-icon {
+    margin: 10px 10px 10px 0;
+}
+
+/* настройка слайдера */
+
+.services .card-horizontal {
+    width: 85%;
+    padding: 0 8%;
+    z-index: 1;
+}
+
+.owl-carousel {
+    position: relative;
+}
+
+.owl-stage {
+    width: 200% !important;
+}
+
+.owl-item {
+    width: 50% !important;
+}
+
+/* настройка кнопок слайдера  */
+
+.owl-nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.owl-prev span, .owl-next span {
+    font-size: 7rem;
+}
+
+.owl-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* настройка точек */
+
+.owl-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #000 !important;
+    border-radius: 10px !important;
+    margin: 0 3px;
+    position: relative;
+    bottom: -15px;
+    transition: 0.2s;
+}
+
+.owl-dots .active {
+    width: 20px;
+    background-color: #ff0000 !important;
 }
