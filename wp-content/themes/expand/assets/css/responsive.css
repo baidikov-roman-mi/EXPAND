@@ -153,6 +153,18 @@
     .card-column {
         margin-right: 20px;
     }
+
+
+    /* reviews */
+    .profile-avatar {
+        width: 75px;
+        height: 75px;
+    }
+
+    .star {
+        width: 15px;
+        height: 15px;
+    }
 }
 
 
@@ -187,6 +199,10 @@
     .header-btn {
         height: 50px;
         width: 150px;
+    }
+
+    .lang-switch {
+        margin-left: 4em;
     }
 
     /* main */
@@ -236,6 +252,13 @@
         width: 550px;
         margin: 20px 40px 20px 0;
     }
+
+
+    /* reviews */
+    .star {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 /* large-desktop */
@@ -282,5 +305,16 @@
     .discount .descr {
         top: 18px;
         left: 15px;
+    }
+
+
+    /* reviews */
+    .profile-avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .star {
+        width: 25px;
     }
 }

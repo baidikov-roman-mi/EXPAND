@@ -1,6 +1,5 @@
 body {
     font-family: 'Inter', sans-serif;
-    ;
     font-weight: 300;
     box-sizing: border-box;
     color: var(--gray);
@@ -14,7 +13,8 @@ li {
 header {
     height: 70px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 5%;
 }
 
 .burger {
@@ -36,6 +36,7 @@ header {
     background-color: #fff;
     width: 100%;
     top: 65px;
+    left: 0;
     height: 190px;
     align-items: center;
     gap: 20px;
@@ -61,6 +62,9 @@ header {
     cursor: pointer;
 }
 
+.lang-switch {
+    margin-left: 2em;
+}
 
 /* главная */
 .main-bg-image {
@@ -231,17 +235,11 @@ main article {
 
 
 /* services */
-#services-carousel {
-    display: block;
-    /* width: 500px; */
-}
-
 .services .card-icon {
     margin: 10px 10px 10px 0;
 }
 
 /* настройка слайдера */
-
 .services .card-horizontal {
     width: 85%;
     padding: 0 8%;
@@ -252,43 +250,37 @@ main article {
     position: relative;
 }
 
-.owl-stage {
-    width: 200% !important;
-}
-
-.owl-item {
-    width: 50% !important;
-}
-
 /* настройка кнопок слайдера  */
-
-.owl-nav {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .owl-prev span, .owl-next span {
     font-size: 7rem;
 }
 
+.owl-prev {
+    position: absolute;
+    top: calc(50% - 4.5rem);
+    left: -1em;
+}
+
+.owl-next {
+    position: absolute;
+    top: calc(50% - 4.5rem);
+    right: -1em;
+}
+
+.owl-prev.disabled, .owl-next.disabled {
+    display: none;
+}
+
+/* настройка точек */
 .owl-dots {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
-/* настройка точек */
-
 .owl-dot {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     background-color: #000 !important;
     border-radius: 10px !important;
     margin: 0 3px;
@@ -298,6 +290,63 @@ main article {
 }
 
 .owl-dots .active {
-    width: 20px;
-    background-color: #ff0000 !important;
+    width: 30px;
+    background-color: var(--red) !important;
+}
+
+
+/* reviews */
+.reviews-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+#reviews-carousel {
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.11);
+    position: static;
+    width: 90%;
+}
+
+#reviews-carousel .owl-dots {
+    display: none;
+}
+
+.comment {
+    padding: 30px 8%;
+}
+
+.profile-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px 10px 10px 0;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    margin: 5px 0;
+}
+
+.starInput {
+    appearance: none;
+}
+
+.star {
+    width: 10px;
+    height: 10px;
+    background-image: url('../img/reviews/star-empty.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.starInput:checked, 
+.starInput:checked ~ .starLabel .star{
+    background: url('../img/reviews/Vector.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
