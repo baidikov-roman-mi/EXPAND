@@ -25,6 +25,8 @@
 .red-button {
     border-radius: 5px;
     background-color: var(--red);
+    color: #fff;
+    border: none;
 }
 
 /* базовый флекс */
@@ -87,6 +89,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* чтобы не слетали картинки */

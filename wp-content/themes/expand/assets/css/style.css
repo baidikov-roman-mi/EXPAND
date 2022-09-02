@@ -42,8 +42,13 @@ header {
     gap: 20px;
 }
 
-.navigations,
 .header-btn {
+    height: 40px;
+    width: 130px;
+    text-decoration: none;
+}
+
+.navigations {
     text-decoration: none;
     font-size: 18px;
 }
@@ -52,21 +57,17 @@ header {
     color: var(--burgundy);
 }
 
-.header-btn {
-    height: 40px;
-    width: 130px;
-    color: #fff;
-}
-
 .lang-switch {
     cursor: pointer;
+    width: 30px;
 }
 
-.lang-switch {
-    margin-left: 2em;
+.lang {
+    margin-right: 5px;
 }
 
-/* главная */
+
+/* main */
 .main-bg-image {
     width: 100%;
 }
@@ -241,7 +242,6 @@ main article {
 
 /* настройка слайдера */
 .services .card-horizontal {
-    width: 85%;
     padding: 0 8%;
     z-index: 1;
 }
@@ -307,6 +307,7 @@ main article {
     box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.11);
     position: static;
     width: 90%;
+    border-radius: 5px;
 }
 
 #reviews-carousel .owl-dots {
@@ -349,4 +350,80 @@ main article {
     background: url('../img/reviews/Vector.png');
     background-size: 100%;
     background-repeat: no-repeat;
+}
+
+
+/* connect */
+.connect-bg {
+    background-image: url('./../img/connect/office-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+.details {
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.11);
+    width: 250px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 3% 5% 7%;
+    position: relative;
+    border-radius: 5px;
+    position: relative;
+    bottom: -4em;
+}
+
+.phone-number {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 10px;
+    outline: none;
+    border: 2px solid var(--red);
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.connect-btn {
+    width: 100%;
+    margin-bottom: 5px;
+    height: 25px;
+    padding: 5px 0;
+}
+
+.connect-btn img {
+    max-height: 100%;
+}
+
+.connect-column {
+    width: 48%;
+}
+
+
+/* footer */
+footer.container {
+    background-color: var(--red);
+    color: var(--white);
+    padding-bottom: 2%;
+}
+
+footer .title {
+    color: var(--white);
+}
+
+footer h2 {
+    margin-top: 40px;
+}
+
+.social-networks {
+    margin: 1em 0 2em;
+}
+
+.social {
+    margin: 0 1em;
+    width: 4em;
+}
+
+.copyright {
+    text-decoration: underline;
+    font-weight: 200;
 }

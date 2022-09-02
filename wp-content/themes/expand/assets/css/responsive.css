@@ -18,11 +18,16 @@
 
     .lang-switch {
         font-size: 20px;
+        width: 40px;
     }
 
     .burger {
         width: 40px;
         height: 40px;
+    }
+
+    .burger-menu {
+        top: 100px;
     }
 
 
@@ -43,6 +48,17 @@
     .circle-icon {
         top: -1.5em;
         left: -1.5em;
+    }
+
+
+    /* connect */
+    .details {
+        width: 350px;
+    }
+
+    .connect-btn {
+        height: 35px;
+        padding: 7px 0;
     }
 }
 
@@ -79,6 +95,12 @@
         order: -1;
     }
 
+    .lang-switch {
+        width: auto;
+        margin-left: 2em;
+    }
+
+
     /* main */
     main {
         display: flex;
@@ -93,12 +115,14 @@
     }
 
     .main-bg-container {
-        padding: 5%;
-        width: 35%;
+        padding: 0 5% 0 0;
+        width: 40%;
+        margin-left: 120px;
     }
 
     main .container {
         width: 40%;
+        padding: 0 0 0 5%;
     }
 
 
@@ -165,6 +189,22 @@
         width: 15px;
         height: 15px;
     }
+
+
+    /* connect */
+    .details {
+        width: 450px;
+        padding: 7% 5%;
+    }
+
+    .phone-number {
+        height: 50px;
+        margin: 20px 0;
+    }
+
+    .connect-btn {
+        height: 40px;
+    }
 }
 
 
@@ -181,11 +221,6 @@
         position: relative;
         top: 0;
         left: 8%;
-    }
-
-    .navigations,
-    .header-btn {
-        font-size: 22px;
     }
 
     .logo-image {
@@ -259,6 +294,20 @@
         width: 20px;
         height: 20px;
     }
+
+
+    /* connect */
+    .details {
+        width: 550px;
+    }
+
+    .phone-number {
+        margin: 25px 0;
+    }
+
+    .connect-btn {
+        height: 45px;
+    }
 }
 
 /* large-desktop */
@@ -280,13 +329,12 @@
         left: 14%;
     }
 
-    
-    /* main */
-
-    .main-bg-container {
-        width: 30%;
+    .lang-switch {
+        margin-left: 8em;
     }
 
+    
+    /* main */
     .main-article-text p {
         font-size: 1.2rem;
     }
@@ -316,5 +364,16 @@
 
     .star {
         width: 25px;
+        height: 25px;
+    }
+
+
+    /* connect */
+    .details {
+        width: 650px;
+    }
+
+    .connect-btn {
+        height: 50px;
     }
 }
