@@ -29,6 +29,16 @@
     border: none;
 }
 
+/* cursor */
+.pointer {
+    cursor: pointer;
+}
+
+/* position */
+.rel {
+    position: relative;
+}
+
 /* базовый флекс */
 .flex {
     display: flex;
@@ -86,14 +96,14 @@
 }
 
 /* убираем маргины и падинги */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* чтобы не слетали картинки */
-img{
+img {
     max-width: 100%;
 }
 

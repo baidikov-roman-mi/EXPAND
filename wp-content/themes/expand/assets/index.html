@@ -34,28 +34,36 @@
 <body>
     <!-- header -->
     <header class="flex">
-        <figure class="burger flex column">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+        <figure class="burger">
+            <div id="line1" class="line"></div>
+            <div id="line2" class="line"></div>
+            <div id="line3" class="line"></div>
+            <div id="line4" class="line"></div>
         </figure>
         <div class="logo-image">
             <img src="img/logo.png">
         </div>
         <div class="align-center between">
             <nav class="burger-menu none">
-                <a href="#" class="navigations anchor">Что мы даём</a>
-                <a href="#" class="navigations anchor">Возможности роста</a>
-                <a href="#" class="red-button header-btn flex-center anchor">Связаться</a>
+                <a href="#benefits" class="navigations anchor">Что мы даём</a>
+                <a href="#services" class="navigations anchor">Возможности роста</a>
+                <a href="#connect" class="red-button header-btn flex-center anchor">Связаться</a>
             </nav>
             <div class="lang-switch flex">
                 <span class="lang">RU</span>
                 <span class="open-arrow">
-                    <i class="fa-solid fa-caret-down"></i>
+                    <div id="crossLine1" class="crossLine"></div>
+                    <div id="crossLine2" class="crossLine"></div>
                 </span>
+            </div>
+            <div class="none lang-options">
+                <div class="lang-option pointer active-lang" data-lang="RU">Русский</div>
+                <div class="lang-option pointer" data-lang="UA">Українська</div>
+                <div class="lang-option pointer" data-lang="EN">English</div>
             </div>
         </div>
     </header>
+
 
     <!-- main -->
     <main>
@@ -103,11 +111,12 @@
 
 
     <!-- benefits -->
+    <a name="benefits" id="benefits"></a>
     <section class="benefits container">
-        <h1 class="title">Прямо как реальная работа в компании</h1>
+        <h1 class="title" id="title">Прямо как реальная работа в компании</h1>
         <article>
-            <figure class="flex">
-                <div id="twitch-card" class="rotate-cards twitch-animation">
+            <figure class="flex benefit-cards">
+                <div id="twitch-card" class="rotate-cards twitch-animation pointer">
                     <div class="benefits-article-icons card-icon">
                         <img src="img/benefits/les-ico.png" alt="">
                     </div>
@@ -119,9 +128,12 @@
                     <h4 class="subtitle">Новые уроки каждую неделю</h4>
                     <p>Мы готовим новые темы, чтобы вы никогда не заскучали с нами </p>
                 </div>
+                <div class="video-container">
+                    <video src="video/2022-09-02 16-58-07.mp4" controls> ></video>
+                </div>
             </figure>
-            <figure class="flex">
-                <div class="rotate-cards">
+            <figure class="flex benefit-cards">
+                <div class="rotate-cards pointer">
                     <div class="benefits-article-icons card-icon">
                         <img src="img/benefits/rot-ico.png" alt="">
                     </div>
@@ -133,9 +145,12 @@
                     <h4 class="subtitle">Ротации</h4>
                     <p>Успеваешь лучше других? Тогда перейдёшь в более сильную группу</p>
                 </div>
+                <div class="video-container">
+                    <video src="video/2022-09-02 16-58-07.mp4" controls> ></video>
+                </div>
             </figure>
-            <figure class="flex">
-                <div class="rotate-cards">
+            <figure class="flex benefit-cards">
+                <div class="rotate-cards pointer">
                     <div class="benefits-article-icons card-icon">
                         <img src="img/benefits/pro-ico.png" alt="">
                     </div>
@@ -147,9 +162,12 @@
                     <h4 class="subtitle">Реальные проекты</h4>
                     <p>Пройди вступной экзамен и делай сайты с другими студентами. За деньги</p>
                 </div>
+                <div class="video-container">
+                    <video src="video/2022-09-02 16-58-07.mp4" controls> ></video>
+                </div>
             </figure>
-            <figure class="flex">
-                <div class="rotate-cards">
+            <figure class="flex benefit-cards">
+                <div class="rotate-cards pointer">
                     <div class="benefits-article-icons card-icon">
                         <img src="img/benefits/aut-ico.png" alt="">
                     </div>
@@ -160,6 +178,9 @@
                 <div>
                     <h4 class="subtitle">Стань автором уроков / учителем</h4>
                     <p>Начни получать денежки вместе с нами: пиши уроки, учи студентов, стань для других ментором </p>
+                </div>
+                <div class="video-container">
+                    <video src="video/kawunchik.mp4" controls> ></video>
                 </div>
             </figure>
         </article>
@@ -172,7 +193,7 @@
         <div class="card-horizontal">
             <figure>
                 <div class="lesson-card">
-                    <div>
+                    <div class="img-zoom">
                         <img src="img/lessons-types/group-photo.png" alt="">
                     </div>
                     <div class="circle-icon">
@@ -209,7 +230,7 @@
             </figure>
             <figure>
                 <div class="lesson-card">
-                    <div>
+                    <div class="img-zoom">
                         <img src="img/lessons-types/solo-photo.png" alt="">
                     </div>
                     <div class="circle-icon">
@@ -245,6 +266,7 @@
 
 
     <!-- services -->
+    <a name="services" id="services"></a>
     <section class="services container">
         <h1 class="title">С нуля до тимлида</h1>
         <div id="services-carousel" class="owl-carousel">
@@ -332,12 +354,12 @@
         </div>
     </section>
 
-    
+
     <!-- reviews -->
     <section class="reviews container">
         <h1 class="title">Отзывы наших учасников</h1>
         <div class="reviews-wrapper">
-            <div id="reviews-carousel" class="owl-carousel">
+            <div id="reviews-carousel" class="owl-carousel reviews-carousel">
                 <figure class="comment">
                     <div class="student flex row">
                         <div class="profile-avatar">
@@ -347,30 +369,28 @@
                             <h4 class="subtitle">Вупсень</h4>
                             <p class="descr">Ученик третьего курса</p>
                             <div class="stars">
-                                <input id="star5" type="radio" name="stars" value="5" class="starInput">
-                                <label for="star5" class="starLabel">
-                                    <div class="star"></div>
-                                </label>
-                                <input id="star4" type="radio" name="stars" value="4" class="starInput">
-                                <label for="star4" class="starLabel">
-                                    <div class="star"></div>
-                                </label>
-                                <input id="star3" type="radio" name="stars" value="3" class="starInput">
-                                <label for="star3" class="starLabel">
-                                    <div class="star"></div>
-                                </label>
-                                <input id="star2" type="radio" name="stars" value="2" class="starInput">
-                                <label for="star2" class="starLabel">
-                                    <div class="star"></div>
-                                </label>
-                                <input id="star1" type="radio" name="stars" value="1" class="starInput">
-                                <label for="star1" class="starLabel">
-                                    <div class="star"></div>
-                                </label>
+                                <div class="star">
+                                    <img src="img/reviews/Vector.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="img/reviews/Vector.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="img/reviews/Vector.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="img/reviews/Vector.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="img/reviews/Vector.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <p>     Школа классная, но я сегодня ударился мизинцем об ножку стола, по-этому ставлю 3 звезды     Я люблю смотреть мультфильмы - мы это делаем всей семьей, выбирая подходящее для всех время. Садимся поудобнее, берем различные вкусняшки, в летний период это компот и мороженое, заранее выбирает мультфильм и начинаем просмотр, а после делимся впечатлениями.
+                    <p> Школа классная, но я сегодня ударился мизинцем об ножку стола, по-этому ставлю 3 звезды Я люблю
+                        смотреть мультфильмы - мы это делаем всей семьей, выбирая подходящее для всех время. Садимся
+                        поудобнее, берем различные вкусняшки, в летний период это компот и мороженое, заранее выбирает
+                        мультфильм и начинаем просмотр, а после делимся впечатлениями.
                     </p>
                 </figure>
                 <figure class="comment">
@@ -382,62 +402,84 @@
                             <h4 class="subtitle">Пупсень</h4>
                             <p class="descr">Ученик третьего курса</p>
                             <div class="stars">
-                                <input id="star6" type="radio" name="stars2" value="5" class="starInput">
-                                <label for="star6" class="starLabel">
-                                    <div class="star"></div>
-                                </label>
-                                <input id="star7" type="radio" name="stars2" value="4" class="starInput">
-                                <label for="star7" class="starLabel">
-                                    <div class="star"></div>
-                                </label>
-                                <input id="star8" type="radio" name="stars2" value="3" class="starInput">
-                                <label for="star8" class="starLabel">
-                                    <div class="star"></div>
-                                </label>
-                                <input id="star9" type="radio" name="stars2" value="2" class="starInput">
-                                <label for="star9" class="starLabel">
-                                    <div class="star"></div>
-                                </label>
-                                <input id="star10" type="radio" name="stars2" value="1" class="starInput">
-                                <label for="star10" class="starLabel">
-                                    <div class="star"></div>
-                                </label>
+                                <div class="star">
+                                    <img src="img/reviews/star-empty.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="img/reviews/star-empty.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="img/reviews/Vector.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="img/reviews/Vector.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="img/reviews/Vector.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <p>     Школа классная, но я сегодня ударился мизинцем об ножку стола, по-этому ставлю 3 звезды     Я люблю смотреть мультфильмы - мы это делаем всей семьей, выбирая подходящее для всех время. Садимся поудобнее, берем различные вкусняшки, в летний период это компот и мороженое, заранее выбирает мультфильм и начинаем просмотр, а после делимся впечатлениями.
+                    <p> Школа классная, но я сегодня ударился мизинцем об ножку стола, по-этому ставлю 3 звезды Я люблю
+                        смотреть мультфильмы - мы это делаем всей семьей, выбирая подходящее для всех время. Садимся
+                        поудобнее, берем различные вкусняшки, в летний период это компот и мороженое, заранее выбирает
+                        мультфильм и начинаем просмотр, а после делимся впечатлениями.
                     </p>
                 </figure>
             </div>
         </div>
     </section>
+
+
+    <!-- connect -->
+    <a name="connect" id="connect"></a>
     <div class="connect-bg">
         <section class="connect container">
-            <div class="details">
-                <h1 class="title">Нужны детали?</h1>
-                <p>Оставьте свой телефон и мы напишем в мессенджер или перезвоним</p>
-                <form action="">
-                    <input type="tel" class="phone-number" placeholder="Ваш номер телефона">
-                    <div class="flex text-center between">
-                        <div class="flex column connect-column">
-                            <button class="connect-btn red-button flex-center">
-                                <img src="img/connect/Vector.png" alt="">
-                            </button>
-                            <p>Свяжитесь со мной в Telegram / Viber</p>
-                        </div>
-                        <div class="flex column connect-column">
-                            <button class="connect-btn red-button flex-center">
-                                <img src="img/connect/call.png" alt="">
-                            </button>
-                            <p>Перезвоните мне 
-                                на мобильный</p>
+            <figure class="flip-modal">
+                <div id="detailsFlip" class="details-container">
+                    <div class="details">
+                        <h1 class="title">Нужны детали?</h1>
+                        <p>Оставьте свой телефон и мы напишем в мессенджер или перезвоним</p>
+                        <form action="">
+                            <input type="tel" class="phone-number text-center" placeholder="Введите ваш номер телефона"
+                                minlength="19" maxlength="19" required>
+                            <div class="flex text-center between">
+                                <div class="flex column connect-column">
+                                    <button id="messenger" class="connect-btn red-button flex-center pointer">
+                                        <img src="img/connect/Vector.png" alt="">
+                                    </button>
+                                    <p>Свяжитесь со мной в Telegram / Viber</p>
+                                </div>
+                                <div class="flex column connect-column">
+                                    <button id="phone" class="connect-btn red-button flex-center pointer">
+                                        <img src="img/connect/call.png" alt="">
+                                    </button>
+                                    <p>Перезвоните мне
+                                        на мобильный</p>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="circle-icon">
+                            <img src="img/lessons-types/circle 2.png" alt="">
                         </div>
                     </div>
-                </form>
-                <div class="circle-icon">
-                    <img src="img/lessons-types/circle 2.png" alt="">
                 </div>
-            </div>
+                <div id="modalFlip" class="details-container">
+                    <div class="modal-window container">
+                        <h1 class="title">Спасибо</h1>
+                        <p>Ваша заявка принята в обработку. Мы свяжемся с вами в ближайшее время</p>
+                        <div class="check">
+                            <img src="img/modal/Vector.png" alt="">
+                        </div>
+                        <div class="circle-icon">
+                            <img src="img/lessons-types/circle 2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </figure>
+
+
+
         </section>
     </div>
 
@@ -446,34 +488,50 @@
     <footer class="container flex column text-center">
         <h2>Каждый может стать каждым в <br><span class="title">EXPAND</span></h2>
         <address class="social-networks flex-center">
-            <div class="social flex-center">
-                <img src="img/social-networks/tg.png" alt="">
-            </div>
-            <div class="social flex-center">
-                <img src="img/social-networks/fc.png" alt="">
-            </div>
-            <div class="social flex-center">
-                <img src="img/social-networks/ut.png" alt="">
-            </div>
-            <div class="social flex-center">
-                <img src="img/social-networks/tt.png" alt="">
-            </div>
-            <div class="social flex-center">
-                <img src="img/social-networks/inst.png" alt="">
-            </div>
+            <a href="#" class="social">
+                <div class="flex-center">
+                    <img src="img/social-networks/tg.png" alt="">
+                </div>
+            </a>
+            <a href="#" class="social">
+                <div class="flex-center">
+                    <img src="img/social-networks/fc.png" alt="">
+                </div>
+            </a>
+            <a href="#" class="social">
+                <div class="flex-center">
+                    <img src="img/social-networks/ut.png" alt="">
+                </div>
+            </a>
+            <a href="#" class="social">
+                <div class="flex-center">
+                    <img src="img/social-networks/tt.png" alt="">
+                </div>
+            </a>
+            <a href="#" class="social">
+                <div class="flex-center">
+                    <img src="img/social-networks/inst.png" alt="">
+                </div>
+            </a>
         </address>
         <p class="copyright">©EXPAND 2022</p>
     </footer>
 
 
-
+    <!-- email.js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
     <!-- owlcarousel -->
     <script src="owlcarousel/jquery.min.js"></script>
     <script src="owlcarousel/owl.carousel.js"></script>
+    <!-- inputMask -->
+    <script src="inputMask/inputmask.js"></script>
 
+
+    <script src="js/inputConnect.js" type="module"></script>
     <script src="js/slider.js"></script>
     <script src="js/burger.js"></script>
-    <script src="js/cardFlipTwitch.js"></script>
+    <script src="js/cardFlipTwitch.js" type="module"></script>
 </body>
 
 </html>
