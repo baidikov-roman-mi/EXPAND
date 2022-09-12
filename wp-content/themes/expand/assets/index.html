@@ -57,9 +57,9 @@
                 </span>
             </div>
             <div class="none lang-options">
-                <div class="lang-option pointer active-lang" data-lang="RU">Русский</div>
-                <div class="lang-option pointer" data-lang="UA">Українська</div>
-                <div class="lang-option pointer" data-lang="EN">English</div>
+                <div class="lang-option pointer rus active-lang" data-lang="RU">Русский</div>
+                <div class="lang-option pointer ukr" data-lang="UA">Українська</div>
+                <div class="lang-option pointer eng" data-lang="EN">English</div>
             </div>
         </div>
     </header>
@@ -70,9 +70,9 @@
         <div class="main-bg-container">
             <img class="main-bg-image" src="img/main/main photo.png" alt="">
         </div>
-        <div class="container">
-            <h1 class="title">Школа программирования EXPAND</h1>
-            <h2>Самые душевные уроки по программированию</h2>
+        <div class="container"> 
+            <h1 class="title" data-en="Programming school EXPAND">Школа веб-разработки EXPAND</h1>
+            <h2 data-en="The best lessons in the world">Самые душевные уроки по программированию</h2>
             <article>
                 <div class="main-article-icons">
                     <img src="img/main/person.png" alt="">
@@ -116,7 +116,7 @@
         <h1 class="title" id="title">Прямо как реальная работа в компании</h1>
         <article>
             <figure class="flex benefit-cards">
-                <div id="twitch-card" class="rotate-cards twitch-animation pointer">
+                <div id="twitch-card" class="rotate-cards pointer">
                     <div class="benefits-article-icons card-icon">
                         <img src="img/benefits/les-ico.png" alt="">
                     </div>
@@ -219,10 +219,8 @@
                     <div class="price align-center">
                         <div class="total-cost">
                             <h3 class="subtitle">460грн / урок</h3>
-                            <p class="descr">1840 грн / месяц</p>
                         </div>
-                        <div class="discount">
-                            <img src="img/lessons-types/body.png" alt="">
+                        <div class="discount text-center">
                             <span class="descr">Первый урок - 300грн</span>
                         </div>
                     </div>
@@ -440,10 +438,11 @@
                     <div class="details">
                         <h1 class="title">Нужны детали?</h1>
                         <p>Оставьте свой телефон и мы напишем в мессенджер или перезвоним</p>
-                        <form action="">
+                        <form action="" class="text-center">
                             <input type="tel" class="phone-number text-center" placeholder="Введите ваш номер телефона"
                                 minlength="19" maxlength="19" required>
-                            <div class="flex text-center between">
+                            <span class="descr">Введите ваш номер</span>
+                            <div class="flex between connect-menu">
                                 <div class="flex column connect-column">
                                     <button id="messenger" class="connect-btn red-button flex-center pointer">
                                         <img src="img/connect/Vector.png" alt="">
@@ -488,7 +487,7 @@
     <footer class="container flex column text-center">
         <h2>Каждый может стать каждым в <br><span class="title">EXPAND</span></h2>
         <address class="social-networks flex-center">
-            <a href="#" class="social">
+            <a href="https://t.me/expand_code" class="social">
                 <div class="flex-center">
                     <img src="img/social-networks/tg.png" alt="">
                 </div>

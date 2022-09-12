@@ -8,13 +8,12 @@ navMenuTrigger.onclick = () => {
 }
 
 
-let lang = document.querySelector('.lang-switch');
 let crossLine1 = document.querySelector('#crossLine1');
 let crossLine2 = document.querySelector('#crossLine2');
+let lang = document.querySelector('.lang-switch');
 let langs = document.querySelector('.lang-options');
 let langOptions = document.querySelectorAll('.lang-option');
-
-
+let langText = document.querySelector('.lang');
 
 lang.onclick = () => {
     crossLine1.classList.toggle('cross');
@@ -22,22 +21,17 @@ lang.onclick = () => {
     langs.classList.toggle('none')
 }
 
-let langText = document.querySelector('.lang');
-
 langOptions.forEach(langOption => {
-    
     langOption.onclick = () => {
         langOptions.forEach(langOption => {
             langOption.classList.remove('active-lang')
         })
 
-        langOption.classList.add('active-lang')
-        let dataLang = langOption.dataset.lang
-        langText.innerHTML = dataLang
-    } 
+        langOption.classList.add('active-lang');
+        let dataLang = langOption.dataset.lang;
+        langText.innerHTML = dataLang;
+    }
 })
-
-
 
 const smoothLinks = document.querySelectorAll('.anchor');
 for (let smoothLink of smoothLinks) {

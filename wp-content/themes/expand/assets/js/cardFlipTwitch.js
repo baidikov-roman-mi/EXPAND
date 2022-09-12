@@ -2,9 +2,15 @@ export { cardRotate as default }
 
 let cards = document.querySelectorAll('.benefit-cards');
 let twitchCard = document.querySelector('#twitch-card');
+let benefitIcon = document.querySelector('.benefits-article-icons');
+let videoIcon = document.querySelector('.video-rotate');
 
 twitchCard.onclick = () => {
-    twitchCard.classList.toggle('twitch-animation')
+    benefitIcon.style.animation = 'none'
+    // benefitIcon.style.transform = "rotateY(180deg)"
+    videoIcon.style.animation = 'none'
+    // videoIcon.style.transform = 'rotateY(360deg)'
+
 }
 
 cards.forEach(card => {
@@ -17,21 +23,21 @@ cards.forEach(card => {
         cardRotate(benefitIcon, videoIcon)
     }
 
-    videoIcon.onclick = function () {
-        modal.style.display = "flex";
-    }
-
-    card.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-
-            video.pause(); 
-        }
-    }
-
-    // videoIcon.onclick = () => {
-    //     cardRotate(videoIcon, benefitIcon)
+    // videoIcon.onclick = function () {
+    //     modal.style.display = "flex";
     // }
+
+    // card.onclick = function (event) {
+    //     if (event.target == modal) {
+    //         modal.style.display = "none";
+
+    //         video.pause(); 
+    //     }
+    // }
+
+    videoIcon.onclick = () => {
+        cardRotate(videoIcon, benefitIcon)
+    }
 })
 
 function cardRotate(item1, item2) {
