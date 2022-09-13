@@ -19,24 +19,53 @@ cards.forEach(card => {
     let modal = card.querySelector('.video-container');
     let video = card.querySelector('video');
 
+    // video overlay 
+    const overlay = card.querySelector('.overlay');
+    const overlayClasses = overlay.classList;
+
+    // Это костыль для плавного исчезновения модалки
+    // прости, но лучше пока ничего не придумал
+    const animationDuration = 700;
+
     benefitIcon.onclick = () => {
         cardRotate(benefitIcon, videoIcon)
     }
 
-    // videoIcon.onclick = function () {
-    //     modal.style.display = "flex";
-    // }
+    // show modal 
+    videoIcon.onclick = function () {
+        if (overlayClasses.contains('hidden')) {
+            // remove all accumulated animations
+            overlay.classList.remove('hidden');
+            overlay.classList.remove('hide');
+            overlay.classList.remove('show');
+            // and show modal
+            overlay.classList.add('show');
+        }
+    }
 
-    // card.onclick = function (event) {
-    //     if (event.target == modal) {
-    //         modal.style.display = "none";
+    // hide overlay
+    overlay.onclick = () => {
+        if (overlayClasses.contains('show')) {
+            overlay.classList.add('hide');
+            overlay.classList.remove('show');
 
-    //         video.pause(); 
-    //     }
-    // }
+            // я применил этот костыль тут
+            // анимации show и hide длятся 0.7 секунды, 
+            // я сделал таймаут после их проигрывания 
+            // и прячу их со страницы
 
-    videoIcon.onclick = () => {
-        cardRotate(videoIcon, benefitIcon)
+            // это плохо, но это хоть какое-то решение 
+            // для плавного исчезновения
+            setTimeout(() => {
+                overlay.classList.add('hidden');
+            }, animationDuration)
+        }
+    }
+
+    card.onclick = function (event) {
+        if (event.target == modal) {
+            video.pause();
+        }
     }
 })
 

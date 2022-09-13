@@ -21,9 +21,14 @@
     <!-- owlcarousel -->
     <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+    <link rel="stylesheet" href="css/owl-custom.css">
 
     <link rel="stylesheet" href="fonts/bandera.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/helper.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
@@ -70,7 +75,7 @@
         <div class="main-bg-container">
             <img class="main-bg-image" src="img/main/main photo.png" alt="">
         </div>
-        <div class="container"> 
+        <div class="container">
             <h1 class="title" data-en="Programming school EXPAND">Школа веб-разработки EXPAND</h1>
             <h2 data-en="The best lessons in the world">Самые душевные уроки по программированию</h2>
             <article>
@@ -110,11 +115,21 @@
     </main>
 
 
-    <!-- benefits -->
+    <!-- benefits scroll link -->
     <a name="benefits" id="benefits"></a>
+
     <section class="benefits container">
         <h1 class="title" id="title">Прямо как реальная работа в компании</h1>
+
+        <!-- 
+            для меня загадка, почему ты выбрал здесь тег article.
+            Он создан для других целей.
+            
+            К тому же на нём висят стили, но нет класса.
+            Это не есть хорошо
+         -->
         <article>
+
             <figure class="flex benefit-cards">
                 <div id="twitch-card" class="rotate-cards pointer">
                     <div class="benefits-article-icons card-icon">
@@ -128,10 +143,15 @@
                     <h4 class="subtitle">Новые уроки каждую неделю</h4>
                     <p>Мы готовим новые темы, чтобы вы никогда не заскучали с нами </p>
                 </div>
-                <div class="video-container">
-                    <video src="video/2022-09-02 16-58-07.mp4" controls> ></video>
-                </div>
+
+                <!-- video modal -->
+                <section class="overlay hidden">
+                    <div class="modal flex-center video-container">
+                        <video src="video/2022-09-02 16-58-07.mp4" controls> ></video>
+                    </div>
+                </section>
             </figure>
+
             <figure class="flex benefit-cards">
                 <div class="rotate-cards pointer">
                     <div class="benefits-article-icons card-icon">
@@ -145,10 +165,15 @@
                     <h4 class="subtitle">Ротации</h4>
                     <p>Успеваешь лучше других? Тогда перейдёшь в более сильную группу</p>
                 </div>
-                <div class="video-container">
-                    <video src="video/2022-09-02 16-58-07.mp4" controls> ></video>
-                </div>
+
+                <!-- video modal -->
+                <section class="overlay hidden">
+                    <div class="modal flex-center video-container">
+                        <video src="video/2022-09-02 16-58-07.mp4" controls> ></video>
+                    </div>
+                </section>
             </figure>
+
             <figure class="flex benefit-cards">
                 <div class="rotate-cards pointer">
                     <div class="benefits-article-icons card-icon">
@@ -162,10 +187,15 @@
                     <h4 class="subtitle">Реальные проекты</h4>
                     <p>Пройди вступной экзамен и делай сайты с другими студентами. За деньги</p>
                 </div>
-                <div class="video-container">
-                    <video src="video/2022-09-02 16-58-07.mp4" controls> ></video>
-                </div>
+
+                <!-- video modal -->
+                <section class="overlay hidden">
+                    <div class="modal flex-center video-container">
+                        <video src="video/2022-09-02 16-58-07.mp4" controls> ></video>
+                    </div>
+                </section>
             </figure>
+
             <figure class="flex benefit-cards">
                 <div class="rotate-cards pointer">
                     <div class="benefits-article-icons card-icon">
@@ -179,11 +209,15 @@
                     <h4 class="subtitle">Стань автором уроков / учителем</h4>
                     <p>Начни получать денежки вместе с нами: пиши уроки, учи студентов, стань для других ментором </p>
                 </div>
-                <div class="video-container">
-                    <video src="video/kawunchik.mp4" controls> ></video>
-                </div>
+
+                <!-- video modal -->
+                <section class="overlay hidden">
+                    <div class="modal flex-center video-container">
+                        <video src="video/kawunchik.mp4" controls> ></video>
+                    </div>
             </figure>
         </article>
+    </section>
     </section>
 
 

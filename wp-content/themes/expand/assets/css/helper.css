@@ -1,26 +1,3 @@
-/* roots */
-:root {
-    --red: #E62428;
-    --burgundy: #511717;
-    --gray: #36413E;
-    --maroon: #2E0C0C;
-    --white: #fff;
-    --ff-bandera: 'Bandera Pro';
-}
-/* scrollbar */
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--white);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--red);
-    border-radius: 10px;
-}
-
 /* для кнопок */
 .red-button {
     border-radius: 5px;

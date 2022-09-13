@@ -1,0 +1,16 @@
+/* base variables */
+:root {
+  /* colors */
+  --red: #E62428;
+  --burgundy: #511717;
+  --gray: #36413E;
+  --maroon: #2E0C0C;
+  --white: #fff;
+
+  /* block styling */
+  --basic-box-shadow: 0 0 5px 5px rgba(0, 0, 0, .5);
+  --overlay-bg: rgba(0, 0, 0, .2);
+
+  /* fonts */
+  --ff-bandera: 'Bandera Pro';
+}

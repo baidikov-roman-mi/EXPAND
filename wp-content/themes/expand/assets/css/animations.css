@@ -1,0 +1,40 @@
+:root {
+  --base-animation-duration: .7s;
+}
+
+/* small helper */
+.hidden {
+  display: none;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  100% {
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.hide {
+  animation: hide var(--base-animation-duration) ease-in-out forwards;
+}
+
+.show {
+  animation: show var(--base-animation-duration) ease-in-out forwards;
+}

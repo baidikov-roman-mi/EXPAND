@@ -199,23 +199,6 @@ main article {
     margin: 10px 10px 10px 0;
 }
 
-.video-container video {
-    max-width: 80%;
-}
-
-.video-container {
-    display: none;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    background-color: rgba(0,0,0,0.4);
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
 /* flip-cards */
 .rotate-cards {
     margin: 10px 10px 10px 0;

@@ -1,0 +1,6 @@
+/* overwrite owl carousel styles */
+
+/* этот фикс, чтобы модалка могла быть выше, чем Оуля */
+.owl-carousel {
+  z-index: 0;
+}
