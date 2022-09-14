@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPAND - школа программирования</title>
+
+    <!-- фонт осом -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- owlcarousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+    <link rel="stylesheet" href="css/owl-custom.css">
+
+    <link rel="stylesheet" href="fonts/bandera.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/helper.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- фавикон -->
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="flex">
+        <figure class="burger">
+            <div id="line1" class="line"></div>
+            <div id="line2" class="line"></div>
+            <div id="line3" class="line"></div>
+            <div id="line4" class="line"></div>
+        </figure>
+        <div class="logo-image">
+            <img src="img/logo.png">
+        </div>
+        <div class="align-center between">
+            <nav class="burger-menu none">
+                <a href="#benefits" class="navigations anchor">Что мы даём</a>
+                <a href="#services" class="navigations anchor">Возможности роста</a>
+                <a href="#connect" class="red-button header-btn flex-center anchor">Связаться</a>
+            </nav>
+            <div class="lang-switch flex">
+                <span class="lang">RU</span>
+                <span class="open-arrow">
+                    <div id="crossLine1" class="crossLine"></div>
+                    <div id="crossLine2" class="crossLine"></div>
+                </span>
+            </div>
+            <div class="none lang-options">
+                <div class="lang-option pointer"><a href="./mainRu.html">Русский</a></div>
+                <div class="lang-option pointer"><a href="./mainUkr.html">Українська</a></div>
+                <div class="lang-option pointer"><a href="./mainEng.html">English</a></div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- main -->
+    <main>
+        <div class="main-bg-container">
+            <img class="main-bg-image" src="img/main/main photo.png" alt="">
+        </div>
+        <div class="container">
+            <h1 class="title" data-en="Programming school EXPAND">Школа веб-розробки EXPAND</h1>
+            <h2 data-en="The best lessons in the world">Самые душевные уроки по программированию</h2>
+            <article>
+                <div class="main-article-icons">
+                    <img src="img/main/person.png" alt="">
+                </div>
+                <div class="main-article-text">
+                    <p><span class="descr">Индивидуальный подход</span> к вам и вашим просьбам</p>
+                </div>
+            </article>
+            <article>
+                <div class="main-article-icons">
+                    <img src="img/main/discount.png" alt="">
+                </div>
+                <div class="main-article-text">
+                    <p><span class="descr">Скидки</span> за достижения</p>
+                </div>
+            </article>
+            <article>
+                <div class="main-article-icons">
+                    <img src="img/main/money.png" alt="">
+                </div>
+                <div class="main-article-text">
+                    <p><span class="descr">Первый зароботок</span> прямо посреди обучения</p>
+                </div>
+            </article>
+            <article>
+                <div class="main-article-icons">
+                    <img src="img/main/family.png" alt="">
+                </div>
+                <div class="main-article-text">
+
+                    <p><span class="descr">Не просто курс -</span> одна семья</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+
+    <!-- benefits scroll link -->
+    <a name="benefits" id="benefits"></a>
+
+    <section class="benefits container">
+        <h1 class="title" id="title">Прямо как реальная работа в компании</h1>
+        <article>
+
+            <figure class="flex benefit-cards">
+                <div id="twitch-card" class="rotate-cards pointer">
+                    <div class="benefits-article-icons card-icon">
+                        <img src="img/benefits/les-ico.png" alt="">
+                    </div>
+                    <div class="video-rotate card-icon">
+                        <img src="img/benefits/play1-ico.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <h4 class="subtitle">Новые уроки каждую неделю</h4>
+                    <p>Мы готовим новые темы, чтобы вы никогда не заскучали с нами </p>
+                </div>
+
+                <!-- video modal -->
+                <section class="overlay hide flex-center">
+                    <div class="modal flex-center video-container">
+                        <video src="video/2022-09-02 16-58-07.mp4" controls> ></video>
+                    </div>
+                </section>
+            </figure>
+
+            <figure class="flex benefit-cards">
+                <div class="rotate-cards pointer">
+                    <div class="benefits-article-icons card-icon">
+                        <img src="img/benefits/rot-ico.png" alt="">
+                    </div>
+                    <div class="video-rotate card-icon">
+                        <img src="img/benefits/play1-ico.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <h4 class="subtitle">Ротации</h4>
+                    <p>Успеваешь лучше других? Тогда перейдёшь в более сильную группу</p>
+                </div>
+
+                <!-- video modal -->
+                <section class="overlay hide flex-center">
+                    <div class="modal flex-center video-container">
+                        <video src="video/2022-09-02 16-58-07.mp4" controls> ></video>
+                    </div>
+                </section>
+            </figure>
+
+            <figure class="flex benefit-cards">
+                <div class="rotate-cards pointer">
+                    <div class="benefits-article-icons card-icon">
+                        <img src="img/benefits/pro-ico.png" alt="">
+                    </div>
+                    <div class="video-rotate card-icon">
+                        <img src="img/benefits/play1-ico.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <h4 class="subtitle">Реальные проекты</h4>
+                    <p>Пройди вступной экзамен и делай сайты с другими студентами. За деньги</p>
+                </div>
+
+                <!-- video modal -->
+                <section class="overlay hide flex-center">
+                    <div class="modal flex-center video-container">
+                        <video src="video/2022-09-02 16-58-07.mp4" controls> ></video>
+                    </div>
+                </section>
+            </figure>
+
+            <figure class="flex benefit-cards">
+                <div class="rotate-cards pointer">
+                    <div class="benefits-article-icons card-icon">
+                        <img src="img/benefits/aut-ico.png" alt="">
+                    </div>
+                    <div class="video-rotate card-icon">
+                        <img src="img/benefits/play1-ico.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <h4 class="subtitle">Стань автором уроков / учителем</h4>
+                    <p>Начни получать денежки вместе с нами: пиши уроки, учи студентов, стань для других ментором </p>
+                </div>
+
+                <!-- video modal -->
+                <section class="hide overlay flex-center">
+                    <div class="modal flex-center video-container">
+                        <video src="video/kawunchik.mp4" controls> ></video>
+                    </div>
+            </figure>
+        </article>
+    </section>
+    </section>
+
+
+    <!-- lessons-types -->
+    <section class="lessons-types container">
+        <h1 class="title">2 формата в одной школе</h1>
+        <div class="card-horizontal">
+            <figure>
+                <div class="lesson-card">
+                    <div class="img-zoom">
+                        <img src="img/lessons-types/group-photo.png" alt="">
+                    </div>
+                    <div class="circle-icon">
+                        <img src="img/lessons-types/circle 2.png" alt="">
+                    </div>
+                </div>
+                <article>
+                    <h3 class="subtitle">Работа в команде</h3>
+                    <ol>
+                        <li>
+                            <p>В группе <span class="descr">3-6 студентов</span></p>
+                        </li>
+                        <li>
+                            <p>Время урока - <span class="descr">1.5 часа</span></p>
+                        </li>
+                        <li>
+                            <p><span class="descr">Авторские </span>методички и задания</p>
+                        </li>
+                        <li>
+                            <p>Быллы, рейтинг и <span class="descr">скидки за достижения</span></p>
+                        </li>
+                    </ol>
+                    <div class="price align-center">
+                        <div class="total-cost">
+                            <h3 class="subtitle">460грн / урок</h3>
+                        </div>
+                        <div class="discount text-center">
+                            <span class="descr">Первый урок - 300грн</span>
+                        </div>
+                    </div>
+                </article>
+            </figure>
+            <figure>
+                <div class="lesson-card">
+                    <div class="img-zoom">
+                        <img src="img/lessons-types/solo-photo.png" alt="">
+                    </div>
+                    <div class="circle-icon">
+                        <img src="img/lessons-types/circle 2.png" alt="">
+                    </div>
+                </div>
+                <article>
+                    <h3 class="subtitle">Прокачка навыков с ментором</h3>
+                    <ol>
+                        <li>
+                            <p>Урок <span class="descr">1-на-1</span></p>
+                        </li>
+                        <li>
+                            <p><span class="descr">60-90 минут </span>практики</p>
+                        </li>
+                        <li>
+                            <p>Подготовка к переходу в <span class="descr">сильную группу</span></p>
+                        </li>
+                        <li>
+                            <p>Делаем твои <span class="descr">проекты вместе</span></p>
+                        </li>
+                    </ol>
+                    <div class="price">
+                        <div class="total-cost">
+                            <h3 class="subtitle">540грн / урок</h3>
+                            <p class="descr">Урок по запросу</p>
+                        </div>
+                    </div>
+                </article>
+            </figure>
+        </div>
+    </section>
+
+
+    <!-- services -->
+    <a name="services" id="services"></a>
+    <section class="services container">
+        <h1 class="title">С нуля до тимлида</h1>
+        <div id="services-carousel" class="owl-carousel">
+            <div class="card-horizontal">
+                <div class="card-column flex column between">
+                    <figure class="flex">
+                        <div class="card-icon">
+                            <img src="img/services/html-ico.png" alt="">
+                        </div>
+                        <article>
+                            <h4 class="subtitle">1. Вёрстка сайтов HTML/CSS/JS</h4>
+                            <p>Сначала мы научимся делать отдельные <span class="descr">“запчасти” сайтов </span></p>
+                        </article>
+                    </figure>
+                    <figure class="flex">
+                        <div class="card-icon">
+                            <img src="img/services/js-co.png" alt="">
+                        </div>
+                        <article>
+                            <h4 class="subtitle">2. Чистый JavaScript</h4>
+                            <p>После мы будем покорять <span class="descr">самый популярный язык в мире —
+                                    JavaScript</span></p>
+                        </article>
+                    </figure>
+                </div>
+                <div class="card-column flex column between">
+                    <figure class="flex">
+                        <div class="card-icon">
+                            <img src="img/services/frl-ico.png" alt="">
+                        </div>
+                        <article>
+                            <h4 class="subtitle">3. Фриланс и работа в команде</h4>
+                            <p>Мы будем работать в команде с и <span class="descr">заработаем тебе первые деньги</span>
+                            <p>
+                        </article>
+                    </figure>
+                    <figure class="flex">
+                        <div class="card-icon">
+                            <img src="img/services/nod-ico.png" alt="">
+                        </div>
+                        <article>
+                            <h4 class="subtitle">4. Node.js</h4>
+                            <p>До этого мы учили <span class="descr">фронтэнд</span> Теперь мы выйдем на новый уровень -
+                                <span class="descr">бэкенд</span>
+                            <p>
+                        </article>
+                    </figure>
+                </div>
+            </div>
+            <div class="card-horizontal">
+                <div class="card-column flex column between">
+                    <figure class="flex">
+                        <div class="card-icon">
+                            <img src="img/services/react.png" alt="">
+                        </div>
+                        <article>
+                            <h4 class="subtitle">React.js</h4>
+                            <p>ПРасскажите, что отличает ваши услуги от услуг в других компаниях</p>
+                        </article>
+                    </figure>
+                    <figure class="flex">
+                        <div class="card-icon">
+                            <img src="img/services/vue.png" alt="">
+                        </div>
+                        <article>
+                            <h4 class="subtitle">Vue.js</h4>
+                            <p>Расскажите, что отличает ваши услуги от услуг в других компаниях
+                            <p>
+                        </article>
+                    </figure>
+                </div>
+                <div class="card-column flex column between">
+                    <figure class="flex">
+                        <div class="card-icon">
+                            <img src="img/services/managment.png" alt="">
+                        </div>
+                        <article>
+                            <h4 class="subtitle">Менеджмент</h4>
+                            <p>Расскажите, что отличает вас от других компаний. Управление IT командами
+                            <p>
+                        </article>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- reviews -->
+    <section class="reviews container">
+        <h1 class="title">Отзывы наших учасников</h1>
+        <div class="reviews-wrapper">
+            <div id="reviews-carousel" class="owl-carousel reviews-carousel">
+                <figure class="comment">
+                    <div class="student flex row">
+                        <div class="profile-avatar">
+                            <img src="img/reviews/images.jpg" alt="">
+                        </div>
+                        <div class="student-info">
+                            <h4 class="subtitle">Вупсень</h4>
+                            <p class="descr">Ученик третьего курса</p>
+                            <div class="stars">
+                                <div class="star">
+                                    <img src="img/reviews/Vector.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="img/reviews/Vector.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="img/reviews/Vector.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="img/reviews/Vector.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="img/reviews/Vector.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p> Школа классная, но я сегодня ударился мизинцем об ножку стола, по-этому ставлю 3 звезды Я люблю
+                        смотреть мультфильмы - мы это делаем всей семьей, выбирая подходящее для всех время. Садимся
+                        поудобнее, берем различные вкусняшки, в летний период это компот и мороженое, заранее выбирает
+                        мультфильм и начинаем просмотр, а после делимся впечатлениями.
+                    </p>
+                </figure>
+                <figure class="comment">
+                    <div class="student flex">
+                        <div class="profile-avatar">
+                            <img src="img/reviews/images2.jpg" alt="">
+                        </div>
+                        <div class="student-info">
+                            <h4 class="subtitle">Пупсень</h4>
+                            <p class="descr">Ученик третьего курса</p>
+                            <div class="stars">
+                                <div class="star">
+                                    <img src="img/reviews/star-empty.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="img/reviews/star-empty.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="img/reviews/Vector.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="img/reviews/Vector.png" alt="">
+                                </div>
+                                <div class="star">
+                                    <img src="img/reviews/Vector.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p> Школа классная, но я сегодня ударился мизинцем об ножку стола, по-этому ставлю 3 звезды Я люблю
+                        смотреть мультфильмы - мы это делаем всей семьей, выбирая подходящее для всех время. Садимся
+                        поудобнее, берем различные вкусняшки, в летний период это компот и мороженое, заранее выбирает
+                        мультфильм и начинаем просмотр, а после делимся впечатлениями.
+                    </p>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- connect -->
+    <a name="connect" id="connect"></a>
+    <div class="connect-bg">
+        <section class="connect container">
+            <figure class="flip-modal">
+                <div id="detailsFlip" class="details-container">
+                    <div class="details">
+                        <h1 class="title">Нужны детали?</h1>
+                        <p>Оставьте свой телефон и мы напишем в мессенджер или перезвоним</p>
+                        <form action="" class="text-center">
+                            <input type="tel" class="phone-number text-center" placeholder="Введите ваш номер телефона"
+                                minlength="19" maxlength="19" required>
+                            <div class="flex between connect-menu">
+                                <div class="flex column connect-column">
+                                    <button id="messenger" class="connect-btn red-button flex-center pointer">
+                                        <img src="img/connect/Vector.png" alt="">
+                                    </button>
+                                    <p>Свяжитесь со мной в Telegram / Viber</p>
+                                </div>
+                                <div class="flex column connect-column">
+                                    <button id="phone" class="connect-btn red-button flex-center pointer">
+                                        <img src="img/connect/call.png" alt="">
+                                    </button>
+                                    <p>Перезвоните мне
+                                        на мобильный</p>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="circle-icon">
+                            <img src="img/lessons-types/circle 2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="modalFlip" class="details-container">
+                    <div class="modal-window container">
+                        <h1 class="title">Спасибо</h1>
+                        <p>Ваша заявка принята в обработку. Мы свяжемся с вами в ближайшее время</p>
+                        <div class="check">
+                            <img src="img/modal/Vector.png" alt="">
+                        </div>
+                        <div class="circle-icon">
+                            <img src="img/lessons-types/circle 2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </figure>
+
+
+
+        </section>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="container flex column text-center">
+        <h2>Каждый может стать каждым в <br><span class="title">EXPAND</span></h2>
+        <address class="social-networks flex-center">
+            <a href="https://t.me/expand_code" class="social">
+                <div class="flex-center">
+                    <img src="img/social-networks/tg.png" alt="">
+                </div>
+            </a>
+            <a href="#" class="social">
+                <div class="flex-center">
+                    <img src="img/social-networks/fc.png" alt="">
+                </div>
+            </a>
+            <a href="#" class="social">
+                <div class="flex-center">
+                    <img src="img/social-networks/ut.png" alt="">
+                </div>
+            </a>
+            <a href="#" class="social">
+                <div class="flex-center">
+                    <img src="img/social-networks/tt.png" alt="">
+                </div>
+            </a>
+            <a href="#" class="social">
+                <div class="flex-center">
+                    <img src="img/social-networks/inst.png" alt="">
+                </div>
+            </a>
+        </address>
+        <p class="copyright">©EXPAND 2022</p>
+    </footer>
+
+
+    <!-- email.js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <!-- owlcarousel -->
+    <script src="owlcarousel/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.js"></script>
+    <!-- inputMask -->
+    <script src="inputMask/inputmask.js"></script>
+
+
+    <script src="js/inputConnect.js" type="module"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/cardFlipTwitch.js" type="module"></script>
+</body>
+
+</html>

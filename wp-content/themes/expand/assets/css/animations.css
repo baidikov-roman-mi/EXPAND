@@ -7,7 +7,7 @@
   display: none;
 }
 
-@keyframes show {
+/* @keyframes show {
   0% {
     opacity: 0;
     z-index: -1;
@@ -29,12 +29,17 @@
     opacity: 0;
     z-index: -1;
   }
-}
+} */
 
-.hide {
+/* .hide {
   animation: hide var(--base-animation-duration) ease-in-out forwards;
 }
 
 .show {
   animation: show var(--base-animation-duration) ease-in-out forwards;
+} */
+
+.hide {
+  opacity: -1;
+  z-index: -2 !important;
 }

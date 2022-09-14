@@ -7,10 +7,7 @@ let videoIcon = document.querySelector('.video-rotate');
 
 twitchCard.onclick = () => {
     benefitIcon.style.animation = 'none'
-    // benefitIcon.style.transform = "rotateY(180deg)"
     videoIcon.style.animation = 'none'
-    // videoIcon.style.transform = 'rotateY(360deg)'
-
 }
 
 cards.forEach(card => {
@@ -21,11 +18,6 @@ cards.forEach(card => {
 
     // video overlay 
     const overlay = card.querySelector('.overlay');
-    const overlayClasses = overlay.classList;
-
-    // Это костыль для плавного исчезновения модалки
-    // прости, но лучше пока ничего не придумал
-    const animationDuration = 700;
 
     benefitIcon.onclick = () => {
         cardRotate(benefitIcon, videoIcon)
@@ -33,32 +25,15 @@ cards.forEach(card => {
 
     // show modal 
     videoIcon.onclick = function () {
-        if (overlayClasses.contains('hidden')) {
-            // remove all accumulated animations
-            overlay.classList.remove('hidden');
-            overlay.classList.remove('hide');
-            overlay.classList.remove('show');
-            // and show modal
-            overlay.classList.add('show');
+        if (overlay.classList.contains('hide')) {
+            overlay.classList.remove('hide')
         }
     }
 
     // hide overlay
     overlay.onclick = () => {
-        if (overlayClasses.contains('show')) {
-            overlay.classList.add('hide');
-            overlay.classList.remove('show');
-
-            // я применил этот костыль тут
-            // анимации show и hide длятся 0.7 секунды, 
-            // я сделал таймаут после их проигрывания 
-            // и прячу их со страницы
-
-            // это плохо, но это хоть какое-то решение 
-            // для плавного исчезновения
-            setTimeout(() => {
-                overlay.classList.add('hidden');
-            }, animationDuration)
+        if (overlay.classList.contains('hide') == false) {
+            overlay.classList.add('hide')
         }
     }
 

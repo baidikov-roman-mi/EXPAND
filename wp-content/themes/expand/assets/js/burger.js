@@ -28,8 +28,6 @@ langOptions.forEach(langOption => {
         })
 
         langOption.classList.add('active-lang');
-        let dataLang = langOption.dataset.lang;
-        langText.innerHTML = dataLang;
     }
 })
 

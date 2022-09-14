@@ -3,18 +3,14 @@
   position: fixed;
   inset: 0 0 0 0;
   background-color: var(--overlay-bg);
+  transition: 0.7s;
 }
 
-/* 
-  Этим костылём я двигаю модалку ближе к центру мобильного девайса.
-  Это ужас, я знаю. Прости
-*/
 .modal {
-  padding: 5rem 1rem 1rem 1rem;
+  padding: 0 1rem;
 }
 
-.overlay,
-.modal {
+.overlay {
   z-index: 2;
 }
 
@@ -25,9 +21,5 @@
 @media screen and (min-width: 1024px) {
   .video-container video {
     max-width: 80%;
-  }
-
-  .modal {
-    padding: 1rem;
   }
 }

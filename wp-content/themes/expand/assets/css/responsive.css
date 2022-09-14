@@ -227,6 +227,10 @@
         height: 40px;
     }
 
+    .connect-menu {
+        margin-top: 25px;
+    }    
+
 
     /* modal */
     .check {

@@ -10,8 +10,6 @@ let modal = document.querySelector('#modalFlip');
 let messenger = document.querySelector('#messenger');
 let phone = document.querySelector('#phone');
 
-let notification = details.querySelector('.descr')
-
 emailjs.init("2EkR30LsiGBjp_RWR");
 
 messenger.onclick = () => {
@@ -26,13 +24,14 @@ phone.onclick = () => {
 
 function validate(templateId) {
     let phoneValue = phoneInput.value.replace(/[' ', '(', ')', -]/g, '')
+    let notification = `<span class="descr">Номер некорректный. Пожалуйста, введите полный номер</span>`
     let templateParams = {
         phoneNumber: phoneValue
     }
 
     if (phoneInput.value.includes('_') || phoneInput.value == '') {
         console.log(phoneValue);
-        notification.innerHTML = 'Номер некорректный. Пожалуйства, введите полный номер'
+        phoneInput.insertAdjacentHTML('afterend', notification)
     }
     else {
         sendEmail(templateId, templateParams);
