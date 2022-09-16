@@ -27,7 +27,6 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/helper.css">
-    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -76,8 +75,8 @@
             <img class="main-bg-image" src="img/main/main photo.png" alt="">
         </div>
         <div class="container">
-            <h1 class="title" data-en="Programming school EXPAND">EXPAND web development school</h1>
-            <h2 data-en="The best lessons in the world">Самые душевные уроки по программированию</h2>
+            <h1 class="title">Школа веб-разработки EXPAND</h1>
+            <h2>Самые душевные уроки по программированию</h2>
             <article>
                 <div class="main-article-icons">
                     <img src="img/main/person.png" alt="">
@@ -107,7 +106,6 @@
                     <img src="img/main/family.png" alt="">
                 </div>
                 <div class="main-article-text">
-
                     <p><span class="descr">Не просто курс -</span> одна семья</p>
                 </div>
             </article>
@@ -120,16 +118,7 @@
 
     <section class="benefits container">
         <h1 class="title" id="title">Прямо как реальная работа в компании</h1>
-
-        <!-- 
-            для меня загадка, почему ты выбрал здесь тег article.
-            Он создан для других целей.
-            
-            К тому же на нём висят стили, но нет класса.
-            Это не есть хорошо
-         -->
         <article>
-
             <figure class="flex benefit-cards">
                 <div id="twitch-card" class="rotate-cards pointer">
                     <div class="benefits-article-icons card-icon">
@@ -147,7 +136,7 @@
                 <!-- video modal -->
                 <section class="overlay hide flex-center">
                     <div class="modal flex-center video-container">
-                        <video src="video/2022-09-02 16-58-07.mp4" controls> ></video>
+                        <video src="video/2022-09-02 16-58-07.mp4" controls></video>
                     </div>
                 </section>
             </figure>
@@ -169,7 +158,7 @@
                 <!-- video modal -->
                 <section class="overlay hide flex-center">
                     <div class="modal flex-center video-container">
-                        <video src="video/2022-09-02 16-58-07.mp4" controls> ></video>
+                        <video src="video/2022-09-02 16-58-07.mp4" controls></video>
                     </div>
                 </section>
             </figure>
@@ -191,7 +180,7 @@
                 <!-- video modal -->
                 <section class="overlay hide flex-center">
                     <div class="modal flex-center video-container">
-                        <video src="video/2022-09-02 16-58-07.mp4" controls> ></video>
+                        <video src="video/2022-09-02 16-58-07.mp4" controls></video>
                     </div>
                 </section>
             </figure>
@@ -211,10 +200,11 @@
                 </div>
 
                 <!-- video modal -->
-                <section class="hide overlay flex-center">
+                <section class="overlay hide flex-center">
                     <div class="modal flex-center video-container">
-                        <video src="video/kawunchik.mp4" controls> ></video>
+                        <video src="video/kawunchik.mp4" controls></video>
                     </div>
+                </section>
             </figure>
         </article>
     </section>
@@ -475,6 +465,7 @@
                         <form action="" class="text-center">
                             <input type="tel" class="phone-number text-center" placeholder="Введите ваш номер телефона"
                                 minlength="19" maxlength="19" required>
+                                <span class="descr"></span>
                             <div class="flex between connect-menu">
                                 <div class="flex column connect-column">
                                     <button id="messenger" class="connect-btn red-button flex-center pointer">

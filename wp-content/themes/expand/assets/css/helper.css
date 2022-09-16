@@ -89,9 +89,12 @@ img {
     padding: 5%;
 }
 
+/* transition */
+.transition {
+    transition: var(--base-animation-duration);
+}
 
 /* текст */
-
 html {
     font-size: 15px;
 }

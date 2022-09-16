@@ -18,7 +18,7 @@ let langText = document.querySelector('.lang');
 lang.onclick = () => {
     crossLine1.classList.toggle('cross');
     crossLine2.classList.toggle('cross');
-    langs.classList.toggle('none')
+    langs.classList.toggle('none');
 }
 
 langOptions.forEach(langOption => {

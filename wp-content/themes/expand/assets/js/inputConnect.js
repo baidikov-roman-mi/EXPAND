@@ -24,14 +24,14 @@ phone.onclick = () => {
 
 function validate(templateId) {
     let phoneValue = phoneInput.value.replace(/[' ', '(', ')', -]/g, '')
-    let notification = `<span class="descr">Номер некорректный. Пожалуйста, введите полный номер</span>`
+    let notification = details.querySelector('.descr')
     let templateParams = {
         phoneNumber: phoneValue
     }
 
     if (phoneInput.value.includes('_') || phoneInput.value == '') {
         console.log(phoneValue);
-        phoneInput.insertAdjacentHTML('afterend', notification)
+        notification.innerHTML = 'Номер некорректный. Пожалуйста, введите полный номер'
     }
     else {
         sendEmail(templateId, templateParams);

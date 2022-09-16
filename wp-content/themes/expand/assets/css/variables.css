@@ -13,4 +13,7 @@
 
   /* fonts */
   --ff-bandera: 'Bandera Pro';
+
+  /* transition */
+  --base-animation-duration: .7s;
 }

@@ -3,7 +3,7 @@
   position: fixed;
   inset: 0 0 0 0;
   background-color: var(--overlay-bg);
-  transition: 0.7s;
+  opacity: 1;
 }
 
 .modal {
@@ -18,7 +18,13 @@
   max-width: 100%;
 }
 
-@media screen and (min-width: 1024px) {
+.hide {
+  z-index: -2;
+  opacity: -1;
+}
+
+
+@media screen and (min-width: 425px) {
   .video-container video {
     max-width: 80%;
   }

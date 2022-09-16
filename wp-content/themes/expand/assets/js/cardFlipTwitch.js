@@ -26,6 +26,7 @@ cards.forEach(card => {
     // show modal 
     videoIcon.onclick = function () {
         if (overlay.classList.contains('hide')) {
+            overlay.classList.add('transition')
             overlay.classList.remove('hide')
         }
     }
