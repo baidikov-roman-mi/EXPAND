@@ -20,14 +20,11 @@ header {
 .burger {
     height: 30px;
     width: 30px;
-    cursor: pointer;
-    position: relative;
 }
 
 .line {
     background-color: #000;
     height: 2px;
-    position: absolute;
     left: 0;
     right: 0;
     transition: 0.5s;
@@ -63,7 +60,6 @@ header {
 .burger-menu {
     flex-direction: column;
     justify-content: space-around;
-    position: absolute;
     background-color: #fff;
     width: 100%;
     top: 60px;
@@ -95,19 +91,16 @@ header {
 }
 
 .lang-switch {
-    cursor: pointer;
     width: 30px;
 }
 
 .open-arrow {
-    position: relative;
     display: flex;
     align-items: center;
     margin-left: 5px;
 }
 
 .crossLine {
-    position: absolute;
     height: 60%;
     background-color: var(--burgundy);
     width: 1px;
@@ -134,7 +127,6 @@ header {
 }
 
 .lang-options {
-    position: absolute;
     right: 1em;
     top: 3.5em;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
@@ -210,7 +202,6 @@ main article {
     min-width: 50px;
     max-width: 50px;
     height: 50px;
-    position: relative;
     perspective: 1000px;
 }
 
@@ -329,10 +320,6 @@ main article {
     margin: 20px 0;
 }
 
-.lesson-card {
-    position: relative;
-}
-
 .img-zoom:hover img {
     transform: scale(110%, 110%);
 }
@@ -347,7 +334,6 @@ main article {
 
 .circle-icon {
     width: 15%;
-    position: absolute;
     top: -1em;
     left: -1em;
 }
@@ -382,10 +368,6 @@ main article {
 .services .card-horizontal {
     padding: 0 8%;
     z-index: 1;
-}
-
-.owl-carousel {
-    position: relative;
 }
 
 /* настройка кнопок слайдера  */
@@ -439,7 +421,6 @@ main article {
 .reviews-wrapper {
     display: flex;
     justify-content: center;
-    position: relative;
     margin-top: 50px;
 }
 
@@ -494,7 +475,6 @@ main article {
     width: 250px;
     margin: 1em auto -5em;
     perspective: 1000px;
-    position: relative;
 }
 
 .details-container {
@@ -509,18 +489,15 @@ main article {
     background-color: #fff;
     padding: 3% 5% 7%;
     border-radius: 5px;
-    position: relative;
 }
 
 /* modal */
 #modalFlip {
     transform: rotateY(180deg);
-    position: absolute;
     top: 0;
 }
 
 .modal-window {
-    position: relative;
     border-radius: 5px;
     height: 100%;
     box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.11);

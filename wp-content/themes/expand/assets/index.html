@@ -38,29 +38,29 @@
 <body>
     <!-- header -->
     <header class="flex">
-        <figure class="burger">
-            <div id="line1" class="line"></div>
-            <div id="line2" class="line"></div>
-            <div id="line3" class="line"></div>
-            <div id="line4" class="line"></div>
+        <figure class="burger pointer rel">
+            <div id="line1" class="line abs"></div>
+            <div id="line2" class="line abs"></div>
+            <div id="line3" class="line abs"></div>
+            <div id="line4" class="line abs"></div>
         </figure>
         <div class="logo-image">
             <img src="img/logo.png">
         </div>
         <div class="align-center between">
-            <nav class="burger-menu none">
+            <nav class="burger-menu none abs">
                 <a href="#benefits" class="navigations anchor">Что мы даём</a>
                 <a href="#services" class="navigations anchor">Возможности роста</a>
                 <a href="#connect" class="red-button header-btn flex-center anchor">Связаться</a>
             </nav>
-            <div class="lang-switch flex">
+            <div class="lang-switch flex pointer">
                 <span class="lang">RU</span>
-                <span class="open-arrow">
-                    <div id="crossLine1" class="crossLine"></div>
-                    <div id="crossLine2" class="crossLine"></div>
+                <span class="open-arrow rel">
+                    <div id="crossLine1" class="crossLine abs"></div>
+                    <div id="crossLine2" class="crossLine abs"></div>
                 </span>
             </div>
-            <div class="none lang-options">
+            <div class="none lang-options abs">
                 <div class="lang-option pointer"><a href="./index.html">Русский</a></div>
                 <div class="lang-option pointer"><a href="./index-ua.html">Українська</a></div>
                 <div class="lang-option pointer"><a href="./index-en.html">English</a></div>
@@ -120,7 +120,7 @@
         <h1 class="title" id="title">Прямо как реальная работа в компании</h1>
         <article>
             <figure class="flex benefit-cards">
-                <div id="twitch-card" class="rotate-cards pointer">
+                <div id="twitch-card" class="rotate-cards pointer rel">
                     <div class="benefits-article-icons card-icon">
                         <img src="img/benefits/les-ico.png" alt="">
                     </div>
@@ -142,7 +142,7 @@
             </figure>
 
             <figure class="flex benefit-cards">
-                <div class="rotate-cards pointer">
+                <div class="rotate-cards pointer rel">
                     <div class="benefits-article-icons card-icon">
                         <img src="img/benefits/rot-ico.png" alt="">
                     </div>
@@ -164,7 +164,7 @@
             </figure>
 
             <figure class="flex benefit-cards">
-                <div class="rotate-cards pointer">
+                <div class="rotate-cards pointer rel">
                     <div class="benefits-article-icons card-icon">
                         <img src="img/benefits/pro-ico.png" alt="">
                     </div>
@@ -186,7 +186,7 @@
             </figure>
 
             <figure class="flex benefit-cards">
-                <div class="rotate-cards pointer">
+                <div class="rotate-cards pointer rel">
                     <div class="benefits-article-icons card-icon">
                         <img src="img/benefits/aut-ico.png" alt="">
                     </div>
@@ -216,11 +216,11 @@
         <h1 class="title">2 формата в одной школе</h1>
         <div class="card-horizontal">
             <figure>
-                <div class="lesson-card">
+                <div class="lesson-card rel">
                     <div class="img-zoom">
                         <img src="img/lessons-types/group-photo.png" alt="">
                     </div>
-                    <div class="circle-icon">
+                    <div class="circle-icon abs">
                         <img src="img/lessons-types/circle 2.png" alt="">
                     </div>
                 </div>
@@ -251,11 +251,11 @@
                 </article>
             </figure>
             <figure>
-                <div class="lesson-card">
+                <div class="lesson-card rel">
                     <div class="img-zoom">
                         <img src="img/lessons-types/solo-photo.png" alt="">
                     </div>
-                    <div class="circle-icon">
+                    <div class="circle-icon abs">
                         <img src="img/lessons-types/circle 2.png" alt="">
                     </div>
                 </div>
@@ -291,7 +291,7 @@
     <a name="services" id="services"></a>
     <section class="services container">
         <h1 class="title">С нуля до тимлида</h1>
-        <div id="services-carousel" class="owl-carousel">
+        <div id="services-carousel" class="owl-carousel rel">
             <div class="card-horizontal">
                 <div class="card-column flex column between">
                     <figure class="flex">
@@ -380,8 +380,8 @@
     <!-- reviews -->
     <section class="reviews container">
         <h1 class="title">Отзывы наших учасников</h1>
-        <div class="reviews-wrapper">
-            <div id="reviews-carousel" class="owl-carousel reviews-carousel">
+        <div class="reviews-wrapper rel">
+            <div id="reviews-carousel" class="owl-carousel reviews-carousel rel">
                 <figure class="comment">
                     <div class="student flex row">
                         <div class="profile-avatar">
@@ -457,9 +457,9 @@
     <a name="connect" id="connect"></a>
     <div class="connect-bg">
         <section class="connect container">
-            <figure class="flip-modal">
+            <figure class="flip-modal rel">
                 <div id="detailsFlip" class="details-container">
-                    <div class="details">
+                    <div class="details rel">
                         <h1 class="title">Нужны детали?</h1>
                         <p>Оставьте свой телефон и мы напишем в мессенджер или перезвоним</p>
                         <form action="" class="text-center">
@@ -482,19 +482,19 @@
                                 </div>
                             </div>
                         </form>
-                        <div class="circle-icon">
+                        <div class="circle-icon abs">
                             <img src="img/lessons-types/circle 2.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div id="modalFlip" class="details-container">
-                    <div class="modal-window container">
+                <div id="modalFlip" class="details-container abs">
+                    <div class="modal-window container rel">
                         <h1 class="title">Спасибо</h1>
                         <p>Ваша заявка принята в обработку. Мы свяжемся с вами в ближайшее время</p>
                         <div class="check">
                             <img src="img/modal/Vector.png" alt="">
                         </div>
-                        <div class="circle-icon">
+                        <div class="circle-icon abs">
                             <img src="img/lessons-types/circle 2.png" alt="">
                         </div>
                     </div>
