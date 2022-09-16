@@ -1,16 +1,20 @@
 import cardRotate from './cardFlipTwitch.js'
 
+// input, email
 let phoneNumber = new Inputmask('+38 (099) 999-99-99')
 let phoneInput = document.querySelector('.phone-number');
 phoneNumber.mask(phoneInput)
 
-
-let details = document.querySelector('#detailsFlip');
-let modal = document.querySelector('#modalFlip');
 let messenger = document.querySelector('#messenger');
 let phone = document.querySelector('#phone');
 
 emailjs.init("2EkR30LsiGBjp_RWR");
+
+
+// modal
+let details = document.querySelector('#detailsFlip');
+let modal = document.querySelector('#modalFlip');
+
 
 messenger.onclick = () => {
     validate("template_8trqh5j")
@@ -22,6 +26,7 @@ phone.onclick = () => {
     return false
 }
 
+
 function validate(templateId) {
     let phoneValue = phoneInput.value.replace(/[' ', '(', ')', -]/g, '')
     let notification = details.querySelector('.descr')
@@ -30,16 +35,13 @@ function validate(templateId) {
     }
 
     if (phoneInput.value.includes('_') || phoneInput.value == '') {
-        console.log(phoneValue);
         notification.innerHTML = 'Номер некорректный. Пожалуйста, введите полный номер'
     }
     else {
         sendEmail(templateId, templateParams);
-        console.log(phoneInput.value.length);
         cardRotate(details, modal);
     }
 }
-
 
 function sendEmail(templateId, templateParams) {
     emailjs.send("service_79itqed", templateId, templateParams).then(
