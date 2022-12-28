@@ -361,7 +361,6 @@ main article {
 
 /* настройка слайдера */
 .services .card-horizontal {
-    padding: 0 8%;
     z-index: 1;
 }
 
