@@ -79,7 +79,6 @@ header {
 
 .navigations {
     text-decoration: none;
-    font-size: 18px;
 }
 
 .navigations {
@@ -92,6 +91,7 @@ header {
 
 .lang-switch {
     width: 30px;
+    right: 15px;
 }
 
 .open-arrow {
@@ -109,12 +109,12 @@ header {
 
 #crossLine1 {
     transform: rotate(-45deg);
-    right: 4px;
+    right: 6.5px;
 }
 
 #crossLine2 {
     transform: rotate(45deg);
-    right: -4px;
+    right: -6.5px;
 }
 
 #crossLine1.cross, #crossLine2.cross {
@@ -122,7 +122,7 @@ header {
 }
 
 .lang {
-    margin-right: 5px;
+    margin-right: 10px;
     color: var(--burgundy);
 }
 
@@ -310,12 +310,7 @@ main article {
     animation: backRotate 5s infinite;
 }
 
-/* .twitch-animation {
-    animation: fronRotate 5s infinite;
-} */
-
 /* lessons-types */
-
 .lessons-types figure {
     margin: 20px 0;
 }

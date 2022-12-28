@@ -46,11 +46,11 @@
     }
 
     #crossLine1 {
-        right: 5px;
+        right: 6px;
     }
 
     #crossLine2 {
-        right: -5px;
+        right: -6px;
     }
 
     .open-arrow {
@@ -127,6 +127,14 @@
 
     .lang-options {
         right: 2em;
+    }
+
+    #crossLine1 {
+        right: 7px;
+    }
+
+    #crossLine2 {
+        right: -7px;
     }
 
 
@@ -219,17 +227,12 @@
     }
 
     .phone-number {
-        height: 50px;
         margin: 20px 0;
     }
 
     .connect-btn {
         height: 40px;
     }
-
-    .connect-menu {
-        margin-top: 25px;
-    }    
 
 
     /* modal */
@@ -272,10 +275,6 @@
         width: 150px;
     }
 
-    .lang-switch {
-        margin-left: 4em;
-    }
-
     /* main */
     main {
         align-items: flex-start;
@@ -287,10 +286,6 @@
 
 
     /* benefits */
-    .benefits h4 {
-        font-size: 22px;
-    }
-
     .benefits p {
         font-size: 1.1rem;
     }
@@ -307,13 +302,12 @@
 
 
     /* lessons-type */
-
     .total-cost {
         margin-right: 30px;
     }
 
     .lessons-types figure {
-        width: 550px;
+        width: 40%;
         margin: 20px 40px 20px 0;
     }
 
@@ -357,10 +351,17 @@
         left: 14%;
     }
 
-    .lang-switch {
-        margin-left: 8em;
+    .lang {
+        right: 15px;
     }
 
+    #crossLine1 {
+        right: 8px;
+    }
+
+    #crossLine2 {
+        right: -8px;
+    }
 
     /* main */
     .main-article-text p {
@@ -397,6 +398,52 @@
 
     /* modal */
     .check {
+        width: 150px;
+    }
+}
+
+
+/* Full HD */
+@media screen and (min-width: 1920px) {
+    html {
+        font-size: 28px;
+    }
+
+    /* header */
+    .header-btn {
+        width: 225px;
+        height: 65px;
+    }
+    
+    #crossLine1 {
+        right: 10.5px;
+    }
+
+    #crossLine2 {
+        right: -10.5px;
+    }
+
+    /* main */
+    .main-article-icons {
+        min-width: 35px;
+        max-width: 35px;
+    }
+
+    /* connect */
+    .flip-modal {
+        width: 750px;
+    }
+
+    .owl-dot {
+        width: 20px;
+        height: 20px;
+    }
+
+    .owl-dots .active {
+        width: 40px;
+    }
+
+    .logo-image {
         width: 150px;
     }
 }
