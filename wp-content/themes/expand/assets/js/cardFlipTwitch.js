@@ -6,8 +6,8 @@ let benefitIcon = document.querySelector('.benefits-article-icons');
 let videoIcon = document.querySelector('.video-rotate');
 
 twitchCard.onclick = () => {
-    benefitIcon.style.animation = 'none'
-    videoIcon.style.animation = 'none'
+    benefitIcon.style.animation = 'none';
+    videoIcon.style.animation = 'none';
 }
 
 cards.forEach(card => {
