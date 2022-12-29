@@ -20,19 +20,21 @@ let langs = document.querySelector('.lang-options');
 let langOptions = document.querySelectorAll('.lang-option');
 let langText = document.querySelector('.lang');
 
-
-
-langText.onfocus = function () {
-    crossLine1.classList.add('cross');
-    crossLine2.classList.add('cross');
-    langs.classList.remove('none');
+lang.onclick = () => {
+    animateCross(crossLine1, crossLine2, langs)
 }
 
-langText.onblur = function () {
-    crossLine1.classList.remove('cross');
-    crossLine2.classList.remove('cross');
-    langs.classList.add('none');
-}
+// langText.onfocus = function () {
+//     crossLine1.classList.add('cross');
+//     crossLine2.classList.add('cross');
+//     langs.classList.remove('none');
+// }
+
+// langText.onblur = function () {
+//     crossLine1.classList.remove('cross');
+//     crossLine2.classList.remove('cross');
+//     langs.classList.add('none');
+// }
 
 function animateCross(line1, line2, langBlock) {
     line1.classList.toggle('cross');
@@ -41,25 +43,25 @@ function animateCross(line1, line2, langBlock) {
 }
 
 
-function validate() {
-    if (langText === document.activeElement) {
-        crossLine1.onclick = () => {
-            langText.blur()
-        }
+// function validate() {
+//     if (langText === document.activeElement) {
+//         crossLine1.onclick = () => {
+//             langText.blur()
+//         }
         
-        crossLine2.onclick = () => {
-            langText.blur()
-        }
-    }
-    else {
-        crossLine1.onclick = () => {
-            langText.focus()
-        }
+//         crossLine2.onclick = () => {
+//             langText.blur()
+//         }
+//     }
+//     else {
+//         crossLine1.onclick = () => {
+//             langText.focus()
+//         }
         
-        crossLine2.onclick = () => {
-            langText.focus()
-        }
-    }
-}
+//         crossLine2.onclick = () => {
+//             langText.focus()
+//         }
+//     }
+// }
 
-validate()
+// validate()
