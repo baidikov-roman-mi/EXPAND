@@ -54,9 +54,8 @@
     }
 
     .open-arrow {
-        margin-left: 10px;
+        margin-left: 20px;
     }
-
 
 
     /* lessons-type */
@@ -114,6 +113,7 @@
         width: auto;
         height: auto;
         padding: 0;
+        transform: translateY(0);
     }
 
     .logo-image {
@@ -336,7 +336,9 @@
     }
 }
 
+
 /* large-desktop */
+
 @media screen and (min-width: 1440px) {
     html {
         font-size: 20px;
@@ -408,6 +410,7 @@
 
 
 /* Full HD */
+
 @media screen and (min-width: 1920px) {
     html {
         font-size: 28px;
@@ -417,6 +420,10 @@
     .header-btn {
         width: 225px;
         height: 65px;
+    }
+
+    .open-arrow {
+        margin-left: 30px;
     }
 
     #crossLine1 {

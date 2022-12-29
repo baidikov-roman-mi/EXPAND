@@ -16,8 +16,17 @@ $(document).ready(function () {
 
     $("#reviews-carousel").owlCarousel({
         items: 1,
-        nav: true,
+        nav: false,
         dots: false,
         loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsive: {
+            768: {
+                nav: true,
+                autoplay: false,
+            }
+        }
     });
 });
