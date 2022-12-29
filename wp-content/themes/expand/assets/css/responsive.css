@@ -289,8 +289,8 @@
 
     .card-icon,
     .rotate-cards {
-        min-width: 75px;
-        max-width: 75px;
+        min-width: 100px;
+        max-width: 100px;
     }
 
 

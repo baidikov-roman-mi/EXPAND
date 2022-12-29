@@ -1,5 +1,8 @@
 import cardRotate from './cardFlipTwitch.js'
 
+// демо почта
+let demoEmail = 'Gemor175@proton.me'
+
 // input, email
 let phoneNumber = new Inputmask('+38 (099) 999-99-99')
 let phoneInput = document.querySelector('.phone-number');
