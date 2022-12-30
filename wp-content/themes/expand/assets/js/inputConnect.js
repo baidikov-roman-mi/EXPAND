@@ -1,7 +1,7 @@
 import cardRotate from './cardFlipTwitch.js'
 
 // демо почта
-let demoEmail = 'Gemor175@proton.me'
+// let demoEmail = 'Gemor175@proton.me'
 
 // input, email
 let phoneNumber = new Inputmask('+38 (099) 999-99-99')
@@ -38,7 +38,7 @@ function validate(templateId) {
     }
 
     if (phoneInput.value.includes('_') || phoneInput.value == '') {
-        notification.innerHTML = 'Номер некорректный. Пожалуйста, введите полный номер'
+        notification.innerHTML = "We can't check this number. Please, enter the right one"
     }
     else {
         sendEmail(templateId, templateParams);
