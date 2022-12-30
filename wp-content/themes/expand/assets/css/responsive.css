@@ -47,11 +47,11 @@
     }
 
     #crossLine1 {
-        right: 6px;
+        right: 7.5px;
     }
 
     #crossLine2 {
-        right: -6px;
+        right: -7.5px;
     }
 
     .open-arrow {
@@ -124,14 +124,6 @@
 
     .lang-options {
         right: 3em;
-    }
-
-    #crossLine1 {
-        right: 7px;
-    }
-
-    #crossLine2 {
-        right: -7px;
     }
 
 
@@ -268,6 +260,15 @@
         top: 6em;
     }
 
+    
+    #crossLine1 {
+        right: 8.5px;
+    }
+
+    #crossLine2 {
+        right: -8.5px;
+    }
+
     /* main */
     main {
         align-items: flex-start;
@@ -357,11 +358,11 @@
     }
 
     #crossLine1 {
-        right: 8px;
+        right: 9.5px;
     }
 
     #crossLine2 {
-        right: -8px;
+        right: -9.5px;
     }
 
     /* main */
