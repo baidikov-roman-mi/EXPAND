@@ -21,7 +21,7 @@ header {
 /* burger */
 .burger {
     height: 30px;
-    width: 30px;
+    width: 45px;
     z-index: 2;
 }
 
@@ -29,7 +29,7 @@ header {
     background-color: #000;
     height: 2px;
     left: 0;
-    right: 0;
+    right: 15px;
     transition: 0.5s;
 }
 
@@ -48,8 +48,8 @@ header {
 
 .burger.open #line1, .burger.open #line4 {
     top: 14px;
-    left: 50%;
-    right: 50%;
+    left: calc(50% - 7.5px);
+    right: calc(50% + 7.5px);
 }
 
 .burger.open #line2 {
@@ -98,18 +98,17 @@ header {
 }
 
 .lang-switch {
-    width: 30px;
-    right: 15px;
+    width: 45px;
 }
 
 .open-arrow {
     display: flex;
     align-items: center;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .crossLine {
-    height: 60%;
+    height: 10px;
     background-color: var(--burgundy);
     width: 1px;
     transition: 0.5s;
@@ -118,12 +117,12 @@ header {
 
 #crossLine1 {
     transform: rotate(-45deg);
-    right: 6.5px;
+    right: 3.5px;
 }
 
 #crossLine2 {
     transform: rotate(45deg);
-    right: -6.5px;
+    right: -3.5px;
 }
 
 #crossLine1.cross, #crossLine2.cross {
@@ -166,6 +165,10 @@ header {
 
 main .title {
     font-size: 2.25rem;
+}
+
+.title {
+    font-size: 2rem;
 }
 
 main .title,

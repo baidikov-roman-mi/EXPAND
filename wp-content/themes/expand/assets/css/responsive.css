@@ -14,16 +14,16 @@
 
     .lang-switch {
         font-size: 20px;
-        width: 40px;
+        width: 55px;
     }
 
     .lang-options {
-        top: 5.5em;
+        top: 4.5em;
         right: 2em;
     }
 
     .burger {
-        width: 40px;
+        width: 55px;
         height: 40px;
     }
 
@@ -46,16 +46,20 @@
         height: 250px;
     }
 
+    .open-arrow {
+        margin-left: 15px;
+    }
+
+    .crossLine {
+        height: 15px;
+    }
+
     #crossLine1 {
-        right: 7.5px;
+        right: 5px;
     }
 
     #crossLine2 {
-        right: -7.5px;
-    }
-
-    .open-arrow {
-        margin-left: 20px;
+        right: -5px;
     }
 
 
@@ -89,10 +93,6 @@
 /* tablet */
 
 @media screen and (min-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
     main .title {
         font-size: 2.2rem;
     }
@@ -118,7 +118,7 @@
     }
 
     .lang-switch {
-        width: auto;
+        width: 60px;
         margin-left: 2em;
     }
 
@@ -166,7 +166,7 @@
     /* lessons-types */
     .card-horizontal {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .lessons-types figure {
@@ -242,7 +242,7 @@
 
 @media screen and (min-width: 1024px) {
     html {
-        font-size: 22px;
+        font-size: 20px;
     }
 
 
@@ -257,17 +257,9 @@
     }
 
     .lang-options {
-        top: 6em;
+        top: 5.5em;
     }
 
-    
-    #crossLine1 {
-        right: 8.5px;
-    }
-
-    #crossLine2 {
-        right: -8.5px;
-    }
 
     /* main */
     main {
@@ -290,8 +282,8 @@
 
     .card-icon,
     .rotate-cards {
-        min-width: 100px;
-        max-width: 100px;
+        min-width: 75px;
+        max-width: 75px;
     }
 
 
@@ -301,7 +293,6 @@
     }
 
     .lessons-types figure {
-        width: 40%;
         margin: 20px 40px 20px 0;
     }
 
@@ -337,11 +328,11 @@
 
 @media screen and (min-width: 1440px) {
     html {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .title {
-        font-size: 2.6rem;
+        font-size: 2rem;
     }
 
     main .title {
@@ -357,13 +348,6 @@
         right: 15px;
     }
 
-    #crossLine1 {
-        right: 9.5px;
-    }
-
-    #crossLine2 {
-        right: -9.5px;
-    }
 
     /* main */
     .main-article-text p {
@@ -373,6 +357,12 @@
     .main-article-icons {
         min-width: 25px;
         max-width: 25px;
+    }
+
+
+    /* lessons-type */
+    .lessons-types figure {
+        width: 45%;
     }
 
 
@@ -413,17 +403,22 @@
     }
 
     /* header */
-    .open-arrow {
-        margin-left: 30px;
+    .crossLine {
+        height: 20px;
     }
 
     #crossLine1 {
-        right: 10.5px;
+        right: 7px;
     }
 
     #crossLine2 {
-        right: -10.5px;
+        right: -7px;
     }
+
+    .lang-switch {
+        width: 80px;
+    }
+
 
     /* main */
     .main-article-icons {
