@@ -1,6 +1,6 @@
 @media screen and (min-width: 425px) {
     html {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     /* header */
@@ -18,7 +18,8 @@
     }
 
     .lang-options {
-        top: 4em;
+        top: 5.5em;
+        right: 2em;
     }
 
     .burger {
@@ -88,10 +89,6 @@
 /* tablet */
 
 @media screen and (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
-
     h1 {
         font-size: 2.5rem;
     }
@@ -126,7 +123,7 @@
     }
 
     .lang-options {
-        right: 2em;
+        right: 3em;
     }
 
     #crossLine1 {
@@ -157,7 +154,7 @@
     }
 
     main .container {
-        width: 40%;
+        width: 55%;
         padding: 0 0 0 5%;
     }
 
@@ -203,10 +200,7 @@
     /* services */
     .card-column {
         margin-right: 20px;
-    }
-
-    .services .card-horizontal {
-        padding: 0 8%;
+        width: 45%;
     }
 
 
@@ -256,7 +250,7 @@
 
 @media screen and (min-width: 1024px) {
     html {
-        font-size: 18px;
+        font-size: 22px;
     }
 
 
@@ -271,12 +265,7 @@
     }
 
     .lang-options {
-        top: 4.5em;
-    }
-
-    .header-btn {
-        height: 50px;
-        width: 150px;
+        top: 6em;
     }
 
     /* main */
@@ -300,8 +289,8 @@
 
     .card-icon,
     .rotate-cards {
-        min-width: 75px;
-        max-width: 75px;
+        min-width: 100px;
+        max-width: 100px;
     }
 
 
@@ -313,6 +302,12 @@
     .lessons-types figure {
         width: 40%;
         margin: 20px 40px 20px 0;
+    }
+
+    
+    /* services */
+    .services .card-horizontal {
+        padding: 0 8%;
     }
 
 
@@ -341,7 +336,7 @@
 
 @media screen and (min-width: 1440px) {
     html {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .title {
@@ -417,11 +412,6 @@
     }
 
     /* header */
-    .header-btn {
-        width: 225px;
-        height: 65px;
-    }
-
     .open-arrow {
         margin-left: 30px;
     }

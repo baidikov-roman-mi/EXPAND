@@ -7,7 +7,7 @@ $(document).ready(function () {
         rewind: true,
         autoplayHoverPause: true,
         responsive: {
-            768: {
+            1024: {
                 nav: true,
                 autoplay: false,
             }
@@ -23,7 +23,7 @@ $(document).ready(function () {
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         responsive: {
-            768: {
+            1024: {
                 nav: true,
                 autoplay: false,
             }

@@ -76,13 +76,12 @@ header {
 }
 
 .burger-menu-active {
-    transform: rotateX(0);
+    transform: translateY(7%);
 }
 /* burger */
 
 .header-btn {
-    height: 40px;
-    width: 130px;
+    padding: 10px 20px;
     text-decoration: none;
 }
 

@@ -17,51 +17,30 @@ let crossLine1 = document.querySelector('#crossLine1');
 let crossLine2 = document.querySelector('#crossLine2');
 let lang = document.querySelector('.lang-switch');
 let langs = document.querySelector('.lang-options');
-let langOptions = document.querySelectorAll('.lang-option');
-let langText = document.querySelector('.lang');
 
-lang.onclick = () => {
-    animateCross(crossLine1, crossLine2, langs)
-}
-
-// langText.onfocus = function () {
-//     crossLine1.classList.add('cross');
-//     crossLine2.classList.add('cross');
-//     langs.classList.remove('none');
-// }
-
-// langText.onblur = function () {
-//     crossLine1.classList.remove('cross');
-//     crossLine2.classList.remove('cross');
-//     langs.classList.add('none');
-// }
-
-function animateCross(line1, line2, langBlock) {
+function animateCross(line1, line2) {
     line1.classList.toggle('cross');
     line2.classList.toggle('cross');
-    langBlock.classList.toggle('none');
 }
 
 
-// function validate() {
-//     if (langText === document.activeElement) {
-//         crossLine1.onclick = () => {
-//             langText.blur()
-//         }
-        
-//         crossLine2.onclick = () => {
-//             langText.blur()
-//         }
-//     }
-//     else {
-//         crossLine1.onclick = () => {
-//             langText.focus()
-//         }
-        
-//         crossLine2.onclick = () => {
-//             langText.focus()
-//         }
-//     }
-// }
+const toggleMenu = function () {
+    langs.classList.toggle("none");
+    animateCross(crossLine1, crossLine2)
+}
 
-// validate()
+lang.addEventListener("click", function (e) {
+    e.stopPropagation();
+    toggleMenu();
+});
+
+document.addEventListener("click", function (e) {
+    const target = e.target;
+    const its_menu = target == langs || langs.contains(target);
+    const its_btnMenu = target == lang;
+    const menu_is_active = langs.classList.contains("none");
+
+    if (!its_menu && !its_btnMenu && !menu_is_active) {
+        toggleMenu();
+    }
+});
