@@ -2,11 +2,6 @@
 let navMenuTrigger = document.querySelector(".burger");
 let burgerMenu = document.querySelector(".burger-menu");
 
-// navMenuTrigger.onclick = () => {
-//     animateBurger(navMenuTrigger, burgerMenu)
-// }
-
-
 function animateBurger(menuTrigger, burgerMenu) {
     menuTrigger.classList.toggle("open");
     burgerMenu.classList.toggle('burger-menu-active');
@@ -68,51 +63,3 @@ document.addEventListener("click", function (e) {
         toggleBurgerMenu();
     }
 });
-
-
-// ещё не проводил рефактор
-
-
-
-
-
-
-
-
-// closeModal(lang, langs, 'none',
-//     () => animateCross(crossLine1, crossLine2),
-//     () => {
-//         if (!its_menu && !its_btnMenu && !menu_is_active) {
-//             toggleMenu();
-//         }
-//     });
-
-// closeModal(navMenuTrigger, burgerMenu, 'burger-menu-active',
-//     () => navMenuTrigger.classList.toggle("open"),
-//     () => {
-//         if (!its_menu && !its_btnMenu && menu_is_active) {
-//             toggleMenu();
-//         }
-//     });
-
-
-// function closeModal(btn, menu, elemClass, animation, validateFunc) {
-//     const toggleMenu = function () {
-//         menu.classList.toggle(`${elemClass}`);
-//         animation()
-//     }
-
-//     btn.addEventListener("click", function (e) {
-//         e.stopPropagation();
-//         toggleMenu();
-//     });
-
-//     document.addEventListener("click", function (e) {
-//         const target = e.target;
-//         const its_menu = target == menu || menu.contains(target);
-//         const its_btnMenu = target == btn;
-//         const menu_is_active = menu.classList.contains(`${elemClass}`);
-
-//         validateFunc()
-//     });
-// }
