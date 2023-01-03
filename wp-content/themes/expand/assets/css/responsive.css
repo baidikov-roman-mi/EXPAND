@@ -195,13 +195,6 @@
         width: 45%;
     }
 
-
-    /* reviews */
-    .profile-avatar {
-        width: 75px;
-        height: 75px;
-    }
-
     .star {
         width: 20px;
     }
@@ -363,13 +356,6 @@
     /* lessons-type */
     .lessons-types figure {
         width: 45%;
-    }
-
-
-    /* reviews */
-    .profile-avatar {
-        width: 100px;
-        height: 100px;
     }
 
     .star {
