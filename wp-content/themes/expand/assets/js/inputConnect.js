@@ -10,8 +10,13 @@ phoneNumber.mask(phoneInput)
 
 let messenger = document.querySelector('#messenger');
 let phone = document.querySelector('#phone');
+let serviceId = 'service_6gt8at2';
+let templateId = "template_kth30i8";
+let userId = 'user_n00IFqkCIrHm6D3teTlZD'
+let callContact = 'Пользователь хочет созваниться с вами';
+let messengerContact = 'Пользователь хочет связаться с вами через Viber/Telegram';
 
-emailjs.init("2EkR30LsiGBjp_RWR");
+emailjs.init(userId);
 
 
 // modal
@@ -20,21 +25,22 @@ let modal = document.querySelector('#modalFlip');
 
 
 messenger.onclick = () => {
-    validate("template_8trqh5j")
+    validate(templateId, messengerContact)
     return false
 }
 
 phone.onclick = () => {
-    validate("template_2phuf1i")
+    validate(templateId, callContact)
     return false
 }
 
 
-function validate(templateId) {
+function validate(templateId, emailContent) {
     let phoneValue = phoneInput.value.replace(/[' ', '(', ')', -]/g, '')
     let notification = details.querySelector('.descr')
     let templateParams = {
-        phoneNumber: phoneValue
+        phoneNumber: phoneValue,
+        emailContent: emailContent
     }
 
     if (phoneInput.value.includes('_') || phoneInput.value == '') {
@@ -42,17 +48,18 @@ function validate(templateId) {
     }
     else {
         sendEmail(templateId, templateParams);
-        cardRotate(details, modal);
+        // cardRotate(details, modal);
     }
 }
 
 function sendEmail(templateId, templateParams) {
-    emailjs.send("service_79itqed", templateId, templateParams).then(
+    emailjs.send(serviceId, templateId, templateParams).then(
         function (response) {
-            console.log("Хорош мужик!", response.status, response.text);
+            cardRotate(details, modal);
         },
         function (error) {
             console.log("Не повезло...", error);
+            console.log(serviceId);
         }
     )
 }
