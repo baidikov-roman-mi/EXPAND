@@ -191,12 +191,31 @@
 
     /* services */
     .card-column {
+        display: flex;
         margin-right: 20px;
-        width: 45%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .last-card-column {
+        justify-content: start;
+    }
+
+    .last-card-column figure {
+        margin-left: calc((100% - (90% + 20px)) / 2);
     }
 
     .star {
         width: 20px;
+    }
+
+    .services-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services figure {
+        width: 45%;
     }
 
 
