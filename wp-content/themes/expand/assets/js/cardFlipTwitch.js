@@ -34,12 +34,7 @@ cards.forEach(card => {
     // hide overlay
     overlay.onclick = () => {
         if (overlay.classList.contains('hide') == false) {
-            overlay.classList.add('hide')
-        }
-    }
-
-    card.onclick = function (event) {
-        if (event.target != modal) {
+            overlay.classList.add('hide');
             video.pause();
         }
     }
