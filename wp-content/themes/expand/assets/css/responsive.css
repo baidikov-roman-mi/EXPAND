@@ -219,6 +219,12 @@
     }
 
 
+    /* reviews */
+    .profile-avatar {
+        height: 100px;
+    }
+
+
     /* connect */
     .flip-modal {
         width: 450px;
