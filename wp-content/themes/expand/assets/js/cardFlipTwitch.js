@@ -39,7 +39,7 @@ cards.forEach(card => {
     }
 
     card.onclick = function (event) {
-        if (event.target == modal) {
+        if (event.target != modal) {
             video.pause();
         }
     }
