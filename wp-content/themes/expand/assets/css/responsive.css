@@ -222,6 +222,8 @@
     /* reviews */
     .profile-avatar {
         height: 100px;
+        width: 100px;
+        max-width: none;
     }
 
 

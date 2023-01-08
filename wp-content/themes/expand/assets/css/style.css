@@ -392,13 +392,14 @@ main article {
 }
 
 /* add vertical alignment for reviews */
-.student {
+/* .student {
     align-items: center;
-}
+} */
 
 .profile-avatar {
     /* Lesh, I change avatar sizes a little */
-    width: 100px;
+    max-width: 60px;
+    height: 60px;
     border-radius: 50%;
     overflow: hidden;
     margin: 10px 10px 10px 0;
